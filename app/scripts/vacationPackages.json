@@ -1,0 +1,54 @@
+{
+    "data": [
+        {
+            "dayId": "07032015",
+            "dayNumber": "1",
+            "totalTimeSlot": "11",
+            "attraction": [
+                {
+                    "startTime": "10:00 AM",
+                    "timeSlot": "3",
+                    "nameOfAttraction": "Effil Tower",
+                    "description": "This lorem ipsum generator is made for all the webdesigners, designers, webmasters...",
+                    "bookingTiming": "10:00 AM",
+                    "attractionTimeSlot": "3"
+                },
+                {
+                    "startTime": "01:00 PM",
+                    "timeSlot": "4",
+                    "nameOfAttraction": "Louvre Museum",
+                    "description": "This lorem ipsum generator is made for all the webdesigners, designers, webmasters...",
+                    "bookingTiming": "01:00 PM",
+                    "attractionTimeSlot": "4"
+                }
+            ],
+            "statOfDay": "10:00 AM",
+            "endOfDay": "08:00 PM"
+        },
+        {
+            "dayId": "08032015",
+            "dayNumber": "2",
+            "totalTimeSlot": "11",
+            "attraction": [
+                {
+                    "startTime": "10:00 AM",
+                    "timeSlot": "3",
+                    "nameOfAttraction": "Effil Tower",
+                    "description": "This lorem ipsum generator is made for all the webdesigners, designers, webmasters...",
+                    "bookingTiming": "10:00 AM",
+                    "attractionTimeSlot": "3"
+                },
+                {
+                    "startTime": "01:00 PM",
+                    "timeSlot": "4",
+                    "nameOfAttraction": "Louvre Museum",
+                    "description": "This lorem ipsum generator is made for all the webdesigners, designers, webmasters...",
+                    "bookingTiming": "01:00 PM",
+                    "attractionTimeSlot": "4"
+                }
+            ],
+            "statOfDay": "10:00 AM",
+            "endOfDay": "08:00 PM"
+        }
+    ]
+}

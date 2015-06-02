@@ -1,23 +1,265 @@
-<div class="jumbotron">
-  <h1>'Allo, 'Allo!</h1>
-  <p class="lead">
-    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-    Always a pleasure scaffolding your apps.
-  </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
-</div>
+<span>{{dayDetails}}</span>
+<div class="container main-block">
+    <div class="row">
+        <div class="col-md-7 custom-border">
+            <h2 class="package-heading">Paris, France</h2>
+            <div class="col-md-12 row" ng-repeat="dayDetail in dayDetails">
+                <h4>Sat, March 7 (Day {{dayDetail.dayNumber}})</h4>
+                <ul class="col-md-12 row">
+                    <li class="col-md-12 row">
+                        <div class="col-md-2">
+                            <div>10:00 am</div>
+                            <div>(3 Hours)</div>
+                        </div>
+                        <div class="col-md-10">
+                            <a>EFFEL TOWER</a>
+                            <p>This lorem ipsum generator is made for all the webdesigners, designers, webmasters...</p>
+                        </div>
+                    </li>
+                    <li class="col-md-12 row">
+                        <div class="col-md-2">
+                            <div>10:00 am</div>
+                            <div>(3 Hours)</div>
+                        </div>
+                        <div class="col-md-10">
+                            <a>EFFEL TOWER</a>
+                            <p>This lorem ipsum generator is made for all the webdesigners, designers, webmasters...</p>
+                        </div>
+                    </li>
+                    <li class="col-md-12 row">
+                        <div class="col-md-2">
+                            <div>10:00 am</div>
+                            <div>(3 Hours)</div>
+                        </div>
+                        <div class="col-md-10">
+                            <a>EFFEL TOWER</a>
+                            <p>This lorem ipsum generator is made for all the webdesigners, designers, webmasters...</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
 
-<div class="row marketing">
-  <h4>HTML5 Boilerplate</h4>
-  <p>
-    HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
-  </p>
+            <!-- <div class="col-md-12 row">
+                <h4>Sat, March 8 (Day 2)</h4>
+                <ul class="col-md-12 row">
+                    <li class="col-md-12 row">
+                        <div class="col-md-2">
+                            <div>10:00 am</div>
+                            <div>(3 Hours)</div>
+                        </div>
+                        <div class="col-md-10">
+                            <a>EFFEL TOWER</a>
+                            <p>This lorem ipsum generator is made for all the webdesigners, designers, webmasters...</p>
+                        </div>
+                    </li>
+                    <li class="col-md-12 row">
+                        <div class="col-md-2">
+                            <div>10:00 am</div>
+                            <div>(3 Hours)</div>
+                        </div>
+                        <div class="col-md-10">
+                            <a>EFFEL TOWER</a>
+                            <p>This lorem ipsum generator is made for all the webdesigners, designers, webmasters...</p>
+                        </div>
+                    </li>
+                    <li class="col-md-12 row">
+                        <div class="col-md-2">
+                            <div>10:00 am</div>
+                            <div>(3 Hours)</div>
+                        </div>
+                        <div class="col-md-10">
+                            <a>EFFEL TOWER</a>
+                            <p>This lorem ipsum generator is made for all the webdesigners, designers, webmasters...</p>
+                        </div>
+                    </li>
+                </ul>
+            </div> -->
 
-  <h4>Angular</h4>
-  <p>
-    AngularJS is a toolset for building the framework most suited to your application development.
-  </p>
+            <!-- <div class="col-md-12 row">
+                <h4>Sat, March 9 (Day 3)</h4>
+                <ul class="col-md-12 row">
+                    <li class="col-md-12 row">
+                        <div class="col-md-2">
+                            <div>10:00 am</div>
+                            <div>(3 Hours)</div>
+                        </div>
+                        <div class="col-md-10">
+                            <a>EFFEL TOWER</a>
+                            <p>This lorem ipsum generator is made for all the webdesigners, designers, webmasters...</p>
+                        </div>
+                    </li>
+                    <li class="col-md-12 row">
+                        <div class="col-md-2">
+                            <div>10:00 am</div>
+                            <div>(3 Hours)</div>
+                        </div>
+                        <div class="col-md-10">
+                            <a>EFFEL TOWER</a>
+                            <p>This lorem ipsum generator is made for all the webdesigners, designers, webmasters...</p>
+                        </div>
+                    </li>
+                    <li class="col-md-12 row">
+                        <div class="col-md-2">
+                            <div>10:00 am</div>
+                            <div>(3 Hours)</div>
+                        </div>
+                        <div class="col-md-10">
+                            <a>EFFEL TOWER</a>
+                            <p>This lorem ipsum generator is made for all the webdesigners, designers, webmasters...</p>
+                        </div>
+                    </li>
+                </ul>
+            </div> -->
 
-  <h4>Karma</h4>
-  <p>Spectacular Test Runner for JavaScript.</p>
+            <!-- <div class="col-md-12 row">
+                <h4>Sat, March 10 (Day 4)</h4>
+                <ul class="col-md-12 row">
+                    <li class="col-md-12 row">
+                        <div class="col-md-2">
+                            <div>10:00 am</div>
+                            <div>(3 Hours)</div>
+                        </div>
+                        <div class="col-md-10">
+                            <a>EFFEL TOWER</a>
+                            <p>This lorem ipsum generator is made for all the webdesigners, designers, webmasters...</p>
+                        </div>
+                    </li>
+                    <li class="col-md-12 row">
+                        <div class="col-md-2">
+                            <div>10:00 am</div>
+                            <div>(3 Hours)</div>
+                        </div>
+                        <div class="col-md-10">
+                            <a>EFFEL TOWER</a>
+                            <p>This lorem ipsum generator is made for all the webdesigners, designers, webmasters...</p>
+                        </div>
+                    </li>
+                    <li class="col-md-12 row">
+                        <div class="col-md-2">
+                            <div>10:00 am</div>
+                            <div>(3 Hours)</div>
+                        </div>
+                        <div class="col-md-10">
+                            <a>EFFEL TOWER</a>
+                            <p>This lorem ipsum generator is made for all the webdesigners, designers, webmasters...</p>
+                        </div>
+                    </li>
+                </ul>
+            </div> -->
+
+            <!-- <div class="col-md-12 row">
+                <h4>Sat, March 7 (Day 1)</h4>
+                <ul class="col-md-12 row">
+                    <li class="col-md-12 row">
+                        <div class="col-md-2">
+                            <div>10:00 am</div>
+                            <div>(3 Hours)</div>
+                        </div>
+                        <div class="col-md-10">
+                            <a>EFFEL TOWER</a>
+                            <p>This lorem ipsum generator is made for all the webdesigners, designers, webmasters...</p>
+                        </div>
+                    </li>
+                    <li class="col-md-12 row">
+                        <div class="col-md-2">
+                            <div>10:00 am</div>
+                            <div>(3 Hours)</div>
+                        </div>
+                        <div class="col-md-10">
+                            <a>EFFEL TOWER</a>
+                            <p>This lorem ipsum generator is made for all the webdesigners, designers, webmasters...</p>
+                        </div>
+                    </li>
+                    <li class="col-md-12 row">
+                        <div class="col-md-2">
+                            <div>10:00 am</div>
+                            <div>(3 Hours)</div>
+                        </div>
+                        <div class="col-md-10">
+                            <a>EFFEL TOWER</a>
+                            <p>This lorem ipsum generator is made for all the webdesigners, designers, webmasters...</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-md-12 row">
+                <h4>Sat, March 7 (Day 1)</h4>
+                <ul class="col-md-12 row">
+                    <li class="col-md-12 row">
+                        <div class="col-md-2">
+                            <div>10:00 am</div>
+                            <div>(3 Hours)</div>
+                        </div>
+                        <div class="col-md-10">
+                            <a>EFFEL TOWER</a>
+                            <p>This lorem ipsum generator is made for all the webdesigners, designers, webmasters...</p>
+                        </div>
+                    </li>
+                    <li class="col-md-12 row">
+                        <div class="col-md-2">
+                            <div>10:00 am</div>
+                            <div>(3 Hours)</div>
+                        </div>
+                        <div class="col-md-10">
+                            <a>EFFEL TOWER</a>
+                            <p>This lorem ipsum generator is made for all the webdesigners, designers, webmasters...</p>
+                        </div>
+                    </li>
+                    <li class="col-md-12 row">
+                        <div class="col-md-2">
+                            <div>10:00 am</div>
+                            <div>(3 Hours)</div>
+                        </div>
+                        <div class="col-md-10">
+                            <a>EFFEL TOWER</a>
+                            <p>This lorem ipsum generator is made for all the webdesigners, designers, webmasters...</p>
+                        </div>
+                    </li>
+                </ul>
+            </div> -->
+        </div>
+        <div class="col-md-4 custom-border col-md-offset-1">
+            <h2 class="attraction-heading">Attractions</h2>
+            <div class="col-md-12 row">
+                <ul>
+                    <li>
+                        <a>Effil Tower</a>
+                        <p>This lorem ipsum generator is made for all the webdesigners, designers, webmasters...</p>
+                    </li>
+                    <li>
+                        <a>Effil Tower</a>
+                        <p>This lorem ipsum generator is made for all the webdesigners, designers, webmasters...</p>
+                    </li>
+                    <li>
+                        <a>Effil Tower</a>
+                        <p>This lorem ipsum generator is made for all the webdesigners, designers, webmasters...</p>
+                    </li>
+                    <li>
+                        <a>Effil Tower</a>
+                        <p>This lorem ipsum generator is made for all the webdesigners, designers, webmasters...</p>
+                    </li>
+                    <li>
+                        <a>Effil Tower</a>
+                        <p>This lorem ipsum generator is made for all the webdesigners, designers, webmasters...</p>
+                    </li>
+                    <li>
+                        <a>Effil Tower</a>
+                        <p>This lorem ipsum generator is made for all the webdesigners, designers, webmasters...</p>
+                    </li>
+                    <li>
+                        <a>Effil Tower</a>
+                        <p>This lorem ipsum generator is made for all the webdesigners, designers, webmasters...</p>
+                    </li>
+                    <li>
+                        <a>Effil Tower</a>
+                        <p>This lorem ipsum generator is made for all the webdesigners, designers, webmasters...</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+
 </div>

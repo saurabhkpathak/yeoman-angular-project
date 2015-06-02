@@ -8,10 +8,9 @@
  * Controller of the html5Application1App
  */
 angular.module('yeomanProject')
-  .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+  .controller('MainCtrl', ['$scope', '$routeParams', '$http', function ($scope, $routeParams, $http) {
+      $http.get('http://localhost:9000/scripts/vacationPackages.json').success(function(data) {
+        //   alert("hiii");
+          $scope.dayDetails = data.data;
+      });
+  }]);
