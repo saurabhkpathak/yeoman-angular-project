@@ -1,8 +1,9 @@
 {
     "data": [
         {
-            "dayId": "07032015",
+            "dayId": "03072015",
             "dayNumber": "1",
+            "date": "Sat, March 7",
             "totalTimeSlot": "11",
             "attraction": [
                 {
@@ -26,7 +27,7 @@
             "endOfDay": "08:00 PM"
         },
         {
-            "dayId": "08032015",
+            "dayId": "03082015",
             "dayNumber": "2",
             "totalTimeSlot": "11",
             "attraction": [

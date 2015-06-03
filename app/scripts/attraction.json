@@ -1,0 +1,18 @@
+{
+    "data": [
+        {
+            "attractionId": "00112",
+            "nameOfAttraction": "Effil Tower",
+            "description": "This lorem ipsum generator is made for all the webdesigners, designers, webmasters...",
+            "bookingTiming": "10:00 AM",
+            "attractionTimeSlot": "3"
+        },
+        {
+            "attractionId": "00113",
+            "nameOfAttraction": "Louvre Museum",
+            "description": "This lorem ipsum generator is made for all the webdesigners, designers, webmasters...",
+            "bookingTiming": "1:00 PM",
+            "attractionTimeSlot": "3"
+        }
+    ]
+}

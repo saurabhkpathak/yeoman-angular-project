@@ -71,9 +71,15 @@ body {
 .custom-border {
     border: 1px solid grey;
     border-radius: 5px;
-    height: 650px;
-    overflow: auto;
+    // height: 650px;
+    // overflow-y: auto;
+}
+li {
+    list-style: none;
 }
 .package-heading, .attraction-heading {
     border-bottom: 1px solid grey;
+}
+.ui-draggable-dragging {
+    border: 1px solid #000;
 }
