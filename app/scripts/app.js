@@ -23,14 +23,6 @@ angular
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl'
-      })
-      .when('/myroute', {
-        templateUrl: 'views/myroute.html',
-        controller: 'MyrouteCtrl'
-      })
       .otherwise({
         redirectTo: '/'
       });
