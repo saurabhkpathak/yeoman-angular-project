@@ -4,7 +4,7 @@
             <h2 class="package-heading">Paris, France</h2>
             <div class="col-md-12 row" ng-repeat="dayDetail in dayDetails">
                 <h4>Sat, March 7 (Day {{dayDetail.dayNumber}})</h4>
-                <ul sortable class="col-md-12 row" id="{{dayDetail.dayId}}">
+                <ul sortable class="col-md-12 row scrolling" id="{{dayDetail.dayId}}">
                     <li data-booking-fix="{{attraction.startTime}}"  class="col-md-12 row" ng-repeat="attraction in dayDetail.attraction">
                         <div class="col-md-2">
                             <div>{{attraction.startTime}}</div>

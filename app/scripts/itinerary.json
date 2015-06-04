@@ -1,0 +1,70 @@
+{
+    "itinerary": [
+        {
+            "title": "",
+            "price": "",
+            "stages": [
+                {
+                    "stg_label": "",
+                    "country": "",
+                    "city": "",
+                    "heading": "",
+                    "date": "",
+                    "attraction": [
+                        {
+                            "attraction_id": ""
+                        }
+                    ],
+                    "tours": [
+                        {
+                            "tour_id": ""
+                        }
+                    ],
+                    "activity": [
+                        {
+                            "acitivity_id": ""
+                        }
+                    ],
+                    "Information": [
+                        {
+                            "Information_id": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "",
+            "price": "",
+            "stages": [
+                {
+                    "stg_label": "",
+                    "country": "",
+                    "city": "",
+                    "heading": "",
+                    "date": "",
+                    "attraction": [
+                        {
+                            "attraction_id": ""
+                        }
+                    ],
+                    "tours": [
+                        {
+                            "tour_id": ""
+                        }
+                    ],
+                    "activity": [
+                        {
+                            "acitivity_id": ""
+                        }
+                    ],
+                    "Information": [
+                        {
+                            "Information_id": ""
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

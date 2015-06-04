@@ -18,8 +18,10 @@ angular.module('yeomanProject')
       //   alert("hiii");
       $scope.attractions = data.data;
     });
-    $scope.checkPositionOfSortItem = function(abc) {
-        alert('I m in function');
+    $scope.checkPositionOfSortItem = function($item, element) {
+      var $droppedItem = $item;
+      // alert($droppedItem.index());
+      element.sortable('cancel');
     };
     //   debugger
     //   $('.dragable').draggable();
@@ -41,14 +43,17 @@ angular.module('yeomanProject')
     // });
   }]).directive('draggable', function() {
     return {
-      // A = attribute, E = Element, C = Class and M = HTML Comment
+      // A = ravityattribute, E = Element, C = Class and M = HTML Comment
       restrict: 'A',
       //The link function is responsible for registering DOM listeners as well as updating the DOM.
       link: function(scope, element, attrs) {
         element.draggable({
           connectToSortable: '[sortable]',
           //   helper: 'clone',
-          revert: 'invalid'
+          revert: true,
+          appendTo: 'body',
+          containment: 'window',
+          scroll: false,
         });
       }
     };
@@ -62,13 +67,13 @@ angular.module('yeomanProject')
           revert: true,
           connectWith: '[sortable]',
           forcePlaceholderSize: true,
-          beforeStop: function(e, ui) {
+          stop: function(e, ui) {
             // $(ui.helper).one('mouseup', function() {
             //   $('.myspan').hide('fast');
             // });
             // $('.myspan').show('fast');
             // alert(ui.item.attr('data-xyz') + '; Index =' + ui.item.index());
-            $scope.checkPositionOfSortItem(ui.item);
+            scope.checkPositionOfSortItem(ui.item, element);
           },
         });
         $('ul, li').disableSelection();

@@ -1,0 +1,22 @@
+{
+    "attraction": [
+        {
+            "attraction_Id": "",
+            "name": "",
+            "details": "",
+            "duration": "",
+            "time": "",
+            "city": "",
+            "country": ""
+        },
+        {
+            "attraction_Id": "",
+            "name": "",
+            "details": "",
+            "duration": "",
+            "time": "",
+            "city": "",
+            "country": ""
+        }
+    ]
+}
