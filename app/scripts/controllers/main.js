@@ -8,16 +8,19 @@
  * Controller of the html5Application1App
  */
 angular.module('yeomanProject')
-  .controller('MainCtrl', ['$scope', '$routeParams', '$http', function ($scope, $routeParams, $http) {
-      $http.get('http://localhost:9000/scripts/vacationPackages.json').success(function(data) {
-        //   alert("hiii");
-          $scope.dayDetails = data.data;
-      });
+  .controller('MainCtrl', ['$scope', '$routeParams', '$http', function($scope, $routeParams, $http) {
+    $http.get('http://localhost:9000/scripts/vacationPackages.json').success(function(data) {
+      //   alert("hiii");
+      $scope.dayDetails = data.data;
+    });
 
-      $http.get('http://localhost:9000/scripts/attraction.json').success(function(data) {
-          //   alert("hiii");
-          $scope.attractions = data.data;
-      });
+    $http.get('http://localhost:9000/scripts/attraction.json').success(function(data) {
+      //   alert("hiii");
+      $scope.attractions = data.data;
+    });
+    $scope.checkPositionOfSortItem = function(abc) {
+        alert('I m in function');
+    };
     //   debugger
     //   $('.dragable').draggable();
     //   $(function() {
@@ -37,39 +40,66 @@ angular.module('yeomanProject')
     //     }
     // });
   }]).directive('draggable', function() {
-  return {
-    // A = attribute, E = Element, C = Class and M = HTML Comment
-    restrict:'A',
-    //The link function is responsible for registering DOM listeners as well as updating the DOM.
-    link: function(scope, element, attrs) {
-      element.draggable({ revert: false });
-      
-    }
-  };
-}).directive('droppable', function($compile) {
-  return {
-    restrict: 'A',
-    link: function($scope, element,attrs){
-      //This makes an element Droppable
-      element.droppable({
-        accept: 'li',
-        drop:function(event, ui) {
-        //   var dragIndex = angular.element(ui.draggable).data('index'),
-        //       reject = angular.element(ui.draggable).data('reject'),
-        //       dragEl = angular.element(ui.draggable).parent(),
-        //       dropEl = angular.element(this);
-          //
-        //   if (dragEl.hasClass('list1') && !dropEl.hasClass('list1') && reject !== true) {
-        //     $scope.list2.push($scope.list1[dragIndex]);
-        //     $scope.list1.splice(dragIndex, 1);
-        //   } else if (dragEl.hasClass('list2') && !dropEl.hasClass('list2') && reject !== true) {
-        //     $scope.list1.push($scope.list2[dragIndex]);
-        //     $scope.list2.splice(dragIndex, 1);
-        //   }
-        //   $scope.$apply();
-        console.log('dragged ' + ui.draggable.attr('class') + ' onto ' + this.id);
-        }
-      });
-    }
-  };
-});
+    return {
+      // A = attribute, E = Element, C = Class and M = HTML Comment
+      restrict: 'A',
+      //The link function is responsible for registering DOM listeners as well as updating the DOM.
+      link: function(scope, element, attrs) {
+        element.draggable({
+          connectToSortable: '[sortable]',
+          //   helper: 'clone',
+          revert: 'invalid'
+        });
+      }
+    };
+  }).directive('sortable', function() {
+    return {
+      // A = attribute, E = Element, C = Class and M = HTML Comment
+      restrict: 'A',
+      //The link function is responsible for registering DOM listeners as well as updating the DOM.
+      link: function(scope, element, attrs) {
+        element.sortable({
+          revert: true,
+          connectWith: '[sortable]',
+          forcePlaceholderSize: true,
+          beforeStop: function(e, ui) {
+            // $(ui.helper).one('mouseup', function() {
+            //   $('.myspan').hide('fast');
+            // });
+            // $('.myspan').show('fast');
+            // alert(ui.item.attr('data-xyz') + '; Index =' + ui.item.index());
+            $scope.checkPositionOfSortItem(ui.item);
+          },
+        });
+        $('ul, li').disableSelection();
+      }
+    };
+  });
+
+// .directive('droppable', function($compile) {
+//   return {
+//     restrict: 'A',
+//     link: function($scope, element,attrs){
+//       //This makes an element Droppable
+//       element.droppable({
+//         accept: 'li',
+//         drop:function(event, ui) {
+//         //   var dragIndex = angular.element(ui.draggable).data('index'),
+//         //       reject = angular.element(ui.draggable).data('reject'),
+//         //       dragEl = angular.element(ui.draggable).parent(),
+//         //       dropEl = angular.element(this);
+//           //
+//         //   if (dragEl.hasClass('list1') && !dropEl.hasClass('list1') && reject !== true) {
+//         //     $scope.list2.push($scope.list1[dragIndex]);
+//         //     $scope.list1.splice(dragIndex, 1);
+//         //   } else if (dragEl.hasClass('list2') && !dropEl.hasClass('list2') && reject !== true) {
+//         //     $scope.list1.push($scope.list2[dragIndex]);
+//         //     $scope.list2.splice(dragIndex, 1);
+//         //   }
+//         //   $scope.$apply();
+//         console.log('dragged ' + ui.draggable.attr('class') + ' onto ' + this.id);
+//         }
+//       });
+//     }
+//   };
+// })

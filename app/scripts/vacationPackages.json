@@ -7,7 +7,7 @@
             "totalTimeSlot": "11",
             "attraction": [
                 {
-                    "startTime": "10:00 AM",
+                    "startTime": "10",
                     "timeSlot": "3",
                     "nameOfAttraction": "Effil Tower",
                     "description": "This lorem ipsum generator is made for all the webdesigners, designers, webmasters...",
@@ -15,7 +15,7 @@
                     "attractionTimeSlot": "3"
                 },
                 {
-                    "startTime": "01:00 PM",
+                    "startTime": "13",
                     "timeSlot": "4",
                     "nameOfAttraction": "Louvre Museum",
                     "description": "This lorem ipsum generator is made for all the webdesigners, designers, webmasters...",
@@ -32,19 +32,19 @@
             "totalTimeSlot": "11",
             "attraction": [
                 {
-                    "startTime": "10:00 AM",
+                    "startTime": "10",
                     "timeSlot": "3",
                     "nameOfAttraction": "Effil Tower",
                     "description": "This lorem ipsum generator is made for all the webdesigners, designers, webmasters...",
-                    "bookingTiming": "10:00 AM",
+                    "bookingTiming": "10",
                     "attractionTimeSlot": "3"
                 },
                 {
-                    "startTime": "01:00 PM",
+                    "startTime": "17",
                     "timeSlot": "4",
                     "nameOfAttraction": "Louvre Museum",
                     "description": "This lorem ipsum generator is made for all the webdesigners, designers, webmasters...",
-                    "bookingTiming": "01:00 PM",
+                    "bookingTiming": "17",
                     "attractionTimeSlot": "4"
                 }
             ],
