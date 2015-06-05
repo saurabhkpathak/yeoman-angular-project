@@ -28,7 +28,7 @@ angular.module('yeomanProject')
 
     $scope.isAddedItenary = function(attraction) {
         return !attraction.addedInItinerary;
-    }
+    };
     //   debugger
     //   $('.dragable').draggable();
     //   $(function() {
@@ -58,22 +58,10 @@ angular.module('yeomanProject')
           revert: true,
           helper: 'clone',
           appendTo: 'body',
-        //   scroll: false
-            //   helper: 'clone',
-            //   revert: function(event, ui) {
-            //     // on older version of jQuery use "draggable"
-            //     // $(this).data("draggable")
-            //     // on 2.x versions of jQuery use "ui-draggable"
-            //     // $(this).data("ui-draggable")
-            //     // $(this).data("ui-draggable").originalPosition = {
-            //     //   top: 0,
-            //     //   left: 0
-            //     // };
-            //     // return boolean
-            //     return !event;
-            //     // that evaluate like this:
-            //     // return event !== false ? false : true;
-            //   }
+          start: function(ui, element) {
+            scope.draggedElement = $(this).data('attraction');
+            // debugger;
+          }
         });
       }
     };
@@ -87,13 +75,9 @@ angular.module('yeomanProject')
           revert: true,
           connectWith: '[sortable]',
           forcePlaceholderSize: true,
-          beforeStop: function(e, ui) {
-            // $(ui.helper).one('mouseup', function() {
-            //   $('.myspan').hide('fast');
-            // });
-            // $('.myspan').show('fast');
-            // alert(ui.item.attr('data-xyz') + '; Index =' + ui.item.index());
-            scope.checkPositionOfSortItem(ui.item, element);
+          beforeStop: function(e, ui, scope) {
+            console.log(JSON.parse(ui.item.context.dataset.attraction));
+            debugger;
           },
         });
         $('ul, li').disableSelection();

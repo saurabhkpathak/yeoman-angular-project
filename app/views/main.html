@@ -22,7 +22,8 @@
             <h2 class="attraction-heading">Attractions</h2>
             <div class="col-md-12 row">
                 <ul>
-                    <li ng-repeat="attraction in attractions | filter: isAddedItenary" draggable>
+                    <li ng-repeat="attraction in attractions | filter: isAddedItenary" draggable
+                    data-attraction="{{attraction}}">
                         <a>{{attraction.name}}</a>
                         <p>{{attraction.details}}</p>
                     </li>
