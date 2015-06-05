@@ -2,7 +2,8 @@
     <div class="row">
         <div class="col-md-7 custom-border">
             <h2 class="package-heading">Paris, France</h2>
-            <div class="col-md-12 row" ng-repeat="stage in stagesItenary.stages">
+            <div class="col-md-12 row" ng-repeat="stage in stagesItenary.stages"
+            data-stage="{{stage}}">
                 <h4>{{stage.date}} (Day {{stage.stg_label}})</h4>
                 <ul sortable class="col-md-12 row scrolling">
                     <li class="col-md-12 row" ng-repeat="attraction in stage.attraction">
