@@ -9,20 +9,26 @@
  */
 angular.module('yeomanProject')
   .controller('MainCtrl', ['$scope', '$routeParams', '$http', function($scope, $routeParams, $http) {
-    $http.get('http://localhost:9000/scripts/vacationPackages.json').success(function(data) {
-      //   alert("hiii");
-      $scope.dayDetails = data.data;
+      // Load the itinerary list
+    $http.get('http://localhost:9000/scripts/itinerary.json').success(function(data) {
+      $scope.stagesItenary = data.itinerary;
+      console.log($scope.stagesItenary);
     });
 
-    $http.get('http://localhost:9000/scripts/attraction.json').success(function(data) {
-      //   alert("hiii");
-      $scope.attractions = data.data;
+    // Load the attractions list
+    $http.get('http://localhost:9000/scripts/attractions.json').success(function(data) {
+      $scope.attractions = data.attraction;
     });
     $scope.checkPositionOfSortItem = function($item, element) {
       var $droppedItem = $item;
       // alert($droppedItem.index());
-      element.sortable('cancel');
+    //   $('.modal').modal();
+    //   element.sortable('cancel');
     };
+
+    $scope.isAddedItenary = function(attraction) {
+        return !attraction.addedInItinerary;
+    }
     //   debugger
     //   $('.dragable').draggable();
     //   $(function() {
@@ -49,11 +55,25 @@ angular.module('yeomanProject')
       link: function(scope, element, attrs) {
         element.draggable({
           connectToSortable: '[sortable]',
-          //   helper: 'clone',
           revert: true,
+          helper: 'clone',
           appendTo: 'body',
-          containment: 'window',
-          scroll: false,
+        //   scroll: false
+            //   helper: 'clone',
+            //   revert: function(event, ui) {
+            //     // on older version of jQuery use "draggable"
+            //     // $(this).data("draggable")
+            //     // on 2.x versions of jQuery use "ui-draggable"
+            //     // $(this).data("ui-draggable")
+            //     // $(this).data("ui-draggable").originalPosition = {
+            //     //   top: 0,
+            //     //   left: 0
+            //     // };
+            //     // return boolean
+            //     return !event;
+            //     // that evaluate like this:
+            //     // return event !== false ? false : true;
+            //   }
         });
       }
     };
@@ -67,7 +87,7 @@ angular.module('yeomanProject')
           revert: true,
           connectWith: '[sortable]',
           forcePlaceholderSize: true,
-          stop: function(e, ui) {
+          beforeStop: function(e, ui) {
             // $(ui.helper).one('mouseup', function() {
             //   $('.myspan').hide('fast');
             // });

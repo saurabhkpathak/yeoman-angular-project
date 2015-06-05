@@ -1,22 +1,64 @@
 {
     "attraction": [
         {
-            "attraction_Id": "",
-            "name": "",
-            "details": "",
-            "duration": "",
-            "time": "",
-            "city": "",
-            "country": ""
+            "attractionId": "attr001",
+            "name": "Effil Tower",
+            "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim",
+            "duration": "3",
+            "time": "10:00",
+            "city": "Paris",
+            "country": "France",
+            "addedInItinerary": true
         },
         {
-            "attraction_Id": "",
-            "name": "",
-            "details": "",
-            "duration": "",
-            "time": "",
-            "city": "",
-            "country": ""
+            "attractionId": "attr002",
+            "name": "Louvre Museum",
+            "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim",
+            "duration": "4",
+            "time": "13:00",
+            "city": "Paris",
+            "country": "France",
+            "addedInItinerary": true
+        },
+        {
+            "attractionId": "attr003",
+            "name": "Orsay Museum",
+            "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim",
+            "duration": "1",
+            "time": "17:00",
+            "city": "Paris",
+            "country": "France",
+            "addedInItinerary": true
+        },
+        {
+            "attractionId": "attr016",
+            "name": "Mohit Raj",
+            "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim",
+            "duration": "1",
+            "time": "11:00",
+            "city": "Paris",
+            "country": "France",
+            "addedInItinerary": false
+        },
+        {
+            "attractionId": "attr017",
+            "name": "Saurabh Pathak",
+            "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim",
+            "duration": "4",
+            "time": "13:00",
+            "city": "Paris",
+            "country": "France",
+            "addedInItinerary": false
+        },
+        {
+            "attractionId": "attr018",
+            "name": "Nitesh Jaiswal",
+            "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim",
+            "duration": "4",
+            "time": "14:00",
+            "city": "Paris",
+            "country": "France",
+            "addedInItinerary": false
         }
     ]
 }

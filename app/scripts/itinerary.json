@@ -1,70 +1,206 @@
 {
-    "itinerary": [
-        {
-            "title": "",
-            "price": "",
-            "stages": [
-                {
-                    "stg_label": "",
-                    "country": "",
-                    "city": "",
-                    "heading": "",
-                    "date": "",
-                    "attraction": [
-                        {
-                            "attraction_id": ""
-                        }
-                    ],
-                    "tours": [
-                        {
-                            "tour_id": ""
-                        }
-                    ],
-                    "activity": [
-                        {
-                            "acitivity_id": ""
-                        }
-                    ],
-                    "Information": [
-                        {
-                            "Information_id": ""
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "title": "",
-            "price": "",
-            "stages": [
-                {
-                    "stg_label": "",
-                    "country": "",
-                    "city": "",
-                    "heading": "",
-                    "date": "",
-                    "attraction": [
-                        {
-                            "attraction_id": ""
-                        }
-                    ],
-                    "tours": [
-                        {
-                            "tour_id": ""
-                        }
-                    ],
-                    "activity": [
-                        {
-                            "acitivity_id": ""
-                        }
-                    ],
-                    "Information": [
-                        {
-                            "Information_id": ""
-                        }
-                    ]
-                }
-            ]
-        }
-    ]
+    "itinerary": {
+        "title": "7 Day Tour of Paris",
+        "price": "$789.00",
+        "stages": [
+            {
+                "stg_label": "1",
+                "country": "France",
+                "city": "Paris",
+                "heading": "",
+                "date": "2015-03-07",
+                "attraction": [
+                    {
+                        "attractionId": "attr001",
+                        "name": "Effil Tower",
+                        "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim",
+                        "duration": "3",
+                        "time": "10:00",
+                        "city": "Paris",
+                        "country": "France"
+                    },
+                    {
+                        "attractionId": "attr002",
+                        "name": "Louvre Museum",
+                        "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim",
+                        "duration": "4",
+                        "time": "13:00",
+                        "city": "Paris",
+                        "country": "France"
+                    },
+                    {
+                        "attractionId": "attr003",
+                        "name": "Orsay Museum",
+                        "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim",
+                        "duration": "1",
+                        "time": "17:00",
+                        "city": "Paris",
+                        "country": "France"
+                    }
+                ]
+            },
+            {
+                "stg_label": "2",
+                "country": "France",
+                "city": "Paris",
+                "heading": "",
+                "date": "2015-03-08",
+                "attraction": [
+                    {
+                        "attractionId": "attr004",
+                        "name": "Montmartre",
+                        "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim",
+                        "duration": "5",
+                        "time": "09:00",
+                        "city": "Paris",
+                        "country": "France"
+                    },
+                    {
+                        "attractionId": "attr005",
+                        "name": "Sacre Coeur",
+                        "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim",
+                        "duration": "2",
+                        "time": "14:00",
+                        "city": "Paris",
+                        "country": "France"
+                    }
+                ]
+            },
+            {
+                "stg_label": "3",
+                "country": "France",
+                "city": "Paris",
+                "heading": "",
+                "date": "2015-03-09",
+                "attraction": [
+                    {
+                        "attractionId": "attr006",
+                        "name": "Montmartre",
+                        "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim",
+                        "duration": "5",
+                        "time": "09:00",
+                        "city": "Paris",
+                        "country": "France"
+                    },
+                    {
+                        "attractionId": "attr007",
+                        "name": "Sacre Coeur",
+                        "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim",
+                        "duration": "2",
+                        "time": "14:00",
+                        "city": "Paris",
+                        "country": "France"
+                    }
+                ]
+            },
+            {
+                "stg_label": "4",
+                "country": "France",
+                "city": "Paris",
+                "heading": "",
+                "date": "2015-03-10",
+                "attraction": [
+                    {
+                        "attractionId": "attr008",
+                        "name": "Montmartre",
+                        "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim",
+                        "duration": "5",
+                        "time": "09:00",
+                        "city": "Paris",
+                        "country": "France"
+                    },
+                    {
+                        "attractionId": "attr009",
+                        "name": "Sacre Coeur",
+                        "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim",
+                        "duration": "2",
+                        "time": "14:00",
+                        "city": "Paris",
+                        "country": "France"
+                    }
+                ]
+            },
+            {
+                "stg_label": "5",
+                "country": "France",
+                "city": "Paris",
+                "heading": "",
+                "date": "2015-03-11",
+                "attraction": [
+                    {
+                        "attractionId": "attr010",
+                        "name": "Montmartre",
+                        "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim",
+                        "duration": "5",
+                        "time": "09:00",
+                        "city": "Paris",
+                        "country": "France"
+                    },
+                    {
+                        "attractionId": "attr011",
+                        "name": "Sacre Coeur",
+                        "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim",
+                        "duration": "2",
+                        "time": "14:00",
+                        "city": "Paris",
+                        "country": "France"
+                    }
+                ]
+            },
+            {
+                "stg_label": "6",
+                "country": "France",
+                "city": "Paris",
+                "heading": "",
+                "date": "2015-03-12",
+                "attraction": [
+                    {
+                        "attractionId": "attr012",
+                        "name": "Montmartre",
+                        "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim",
+                        "duration": "5",
+                        "time": "09:00",
+                        "city": "Paris",
+                        "country": "France"
+                    },
+                    {
+                        "attractionId": "attr013",
+                        "name": "Sacre Coeur",
+                        "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim",
+                        "duration": "2",
+                        "time": "14:00",
+                        "city": "Paris",
+                        "country": "France"
+                    }
+                ]
+            },
+            {
+                "stg_label": "7",
+                "country": "France",
+                "city": "Paris",
+                "heading": "",
+                "date": "2015-03-13",
+                "attraction": [
+                    {
+                        "attractionId": "attr014",
+                        "name": "Montmartre",
+                        "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim",
+                        "duration": "5",
+                        "time": "09:00",
+                        "city": "Paris",
+                        "country": "France"
+                    },
+                    {
+                        "attractionId": "attr015",
+                        "name": "Sacre Coeur",
+                        "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim",
+                        "duration": "2",
+                        "time": "14:00",
+                        "city": "Paris",
+                        "country": "France"
+                    }
+                ]
+            }
+        ]
+    }
 }
