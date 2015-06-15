@@ -26,34 +26,34 @@ angular.module('yeomanProject')
     $scope.draggableOptions = {
       connectWith: ".connected-drop-target-sortable",
       update: function(e, ui) {
-        var targetList = ui.item.sortable.droptargetModel;
-        var sourceList = ui.item.sortable.sourceModel;
-        if (targetList === sourceList) {
-          ui.item.sortable.cancel();
-          return;
-        } else {
-          var totalDuration = sumOfDuration(targetList);
-          if ((totalDuration + parseInt(ui.item.sortable.model.duration)) <= 11) {
-            targetList.splice(ui.item.sortable.dropindex, 0, ui.item.sortable.model);
-          } else {
-            ui.item.sortable.cancel();
-            alert('Cannot add attraction as duration is exceeding 11 hours');
-          }
-        }
+        addAttraction(e, ui);
       }
     };
 
     $scope.sortableOptions = {
-      // connectWith: ".connected-drop-target-sortable"
+      connectWith: ".connected-drop-target-sortable",
+      receive: function(e, ui) {
+        addAttraction(e, ui);
+      }
     };
 
-    $scope.sortableOptions = {};
-    function sumOfDuration (list) {
+    function sumOfDuration(list) {
       var sum = 0;
       angular.forEach(list, function(item) {
         sum += parseInt(item.duration);
       });
       return sum;
+    }
+
+    function addAttraction(e, ui) {
+      debugger;
+      var targetList = ui.item.sortable.droptargetModel;
+      var totalDuration = sumOfDuration(targetList);
+      if (ui.item.sortable.model == undefined ||
+        (totalDuration + parseInt(ui.item.sortable.model.duration)) > 11) {
+        ui.item.sortable.cancel();
+        alert('Cannot add attraction as duration is exceeding 11 hours');
+      }
     }
 
   }]);
