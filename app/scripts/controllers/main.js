@@ -32,12 +32,14 @@ angular.module('yeomanProject')
           // restore the removed item
           debugger
         //   ui.item.sortable.sourceModel.push(ui.item.sortable.model);
-        ui.item.sortable.cancel(); 
+        // ui.item.sortable.cancel();
         }
       }
     };
 
-    $scope.sortableOptions = {};
+    $scope.sortableOptions = {
+        connectWith: ".connected-drop-target-sortable"
+    };
 
 
   }]);
