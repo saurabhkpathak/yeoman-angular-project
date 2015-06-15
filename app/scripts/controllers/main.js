@@ -18,8 +18,11 @@ angular.module('yeomanProject')
     // Load the attractions list
     $http.get('http://localhost:9000/scripts/attractions.json').success(function(data) {
       $scope.attractions = data.attraction;
-    });
+      $scope.draggables = $scope.attractions.map(function(x) {
+        return [x];
+      });
 
+    });
     $scope.draggableOptions = {
       connectWith: ".connected-drop-target-sortable",
       update: function(e, ui) {
@@ -31,15 +34,19 @@ angular.module('yeomanProject')
           ui.item.sortable.droptarget.hasClass('connected-drop-target-sortable')) {
           // restore the removed item
           debugger
-        //   ui.item.sortable.sourceModel.push(ui.item.sortable.model);
-        // ui.item.sortable.cancel();
+          ui.item.sortable.sourceModel.push(ui.item.sortable.model);
+          // ui.item.sortable.cancel();
         }
       }
     };
 
     $scope.sortableOptions = {
-        connectWith: ".connected-drop-target-sortable"
+      // connectWith: ".connected-drop-target-sortable"
     };
+    // debugger
+    // $scope.$watchCollection('attractions', function() {
+    //   $scope.attractions = orderByFilter($scope.attractions, ['attractionId']);
+    // });
 
 
   }]);

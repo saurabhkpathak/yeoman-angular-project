@@ -21,14 +21,25 @@
     <div class="col-md-4 custom-border col-md-offset-1">
       <h2 class="attraction-heading">Attractions</h2>
       <div class="col-md-12 row">
-        <ul ui-sortable="draggableOptions" ng-model="attractions" class="draggable-element-container">
-          <li ng-repeat="attraction in attractions" ng-show="!attraction.addedInItinerary">
-            <div>
+        <ul>
+          <li ui-sortable="draggableOptions"
+            class="draggable-element-container"
+            ng-model="draggableArray"
+            ng-repeat="draggableArray in draggables track by $index"
+            >
+            <div ng-repeat="attraction in draggableArray" ng-show="!attraction.addedInItinerary">
               <a>{{attraction.name}}</a>
               <p>{{attraction.details}}</p>
             </div>
           </li>
         </ul>
+
+
+        <!-- <div ui-sortable="draggableOptions" class="screen draggable-element-container"
+        ng-repeat="draggableArray in draggables track by $index"
+        ng-model="draggableArray">
+          <div ng-repeat="draggable in draggableArray" class="app">{{draggable.title}}</div>
+        </div> -->
       </div>
     </div>
 

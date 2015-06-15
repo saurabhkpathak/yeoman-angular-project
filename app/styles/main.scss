@@ -88,3 +88,12 @@ li {
 .ui-draggable-dragging {
     width: 273px;
 }
+.ui-sortable-placeholder {
+    border: 1px dotted red;
+    min-height: 100px;
+    border-radius: 5px;
+    visibility: visible !important;
+}
+.connected-drop-target-sortable {
+    clear: both;
+}
