@@ -22,7 +22,7 @@
       <h2 class="attraction-heading">Attractions</h2>
       <div class="col-md-12 row">
         <ul ui-sortable="draggableOptions" ng-model="attractions" class="draggable-element-container">
-          <li ng-repeat="attraction in attractions">
+          <li ng-repeat="attraction in attractions" ng-show="!attraction.addedInItinerary">
             <div>
               <a>{{attraction.name}}</a>
               <p>{{attraction.details}}</p>

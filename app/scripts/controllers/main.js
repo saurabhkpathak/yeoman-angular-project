@@ -22,7 +22,7 @@ angular.module('yeomanProject')
 
     $scope.draggableOptions = {
       connectWith: ".connected-drop-target-sortable",
-      stop: function(e, ui) {
+      update: function(e, ui) {
 
         // if the element is removed from the first container
         if (ui.item.sortable.source.hasClass('draggable-element-container') &&
@@ -31,7 +31,8 @@ angular.module('yeomanProject')
           ui.item.sortable.droptarget.hasClass('connected-drop-target-sortable')) {
           // restore the removed item
           debugger
-          ui.item.sortable.sourceModel.push(ui.item.sortable.model);
+        //   ui.item.sortable.sourceModel.push(ui.item.sortable.model);
+        ui.item.sortable.cancel(); 
         }
       }
     };
