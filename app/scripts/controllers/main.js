@@ -9,7 +9,7 @@
  */
 angular.module('yeomanProject')
   .controller('MainCtrl', ['$scope', '$routeParams', '$http', function($scope, $routeParams, $http) {
-      // Load the itinerary list
+    // Load the itinerary list
     $http.get('http://localhost:9000/scripts/itinerary.json').success(function(data) {
       $scope.stagesItenary = data.itinerary;
       console.log($scope.stagesItenary);
@@ -19,54 +19,24 @@ angular.module('yeomanProject')
     $http.get('http://localhost:9000/scripts/attractions.json').success(function(data) {
       $scope.attractions = data.attraction;
     });
-    $scope.checkPositionOfSortItem = function($item, element) {
-      var $droppedItem = $item;
-      // alert($droppedItem.index());
-    //   $('.modal').modal();
-    //   element.sortable('cancel');
-    };
 
-    $scope.isAddedItenary = function(attraction) {
-        return !attraction.addedInItinerary;
-    };
+    $scope.draggableOptions = {
+      connectWith: ".connected-drop-target-sortable",
+      stop: function(e, ui) {
 
-  }]).directive('draggable', function() {
-    return {
-      // A = ravityattribute, E = Element, C = Class and M = HTML Comment
-      restrict: 'A',
-      //The link function is responsible for registering DOM listeners as well as updating the DOM.
-      link: function(scope, element, attrs) {
-        element.draggable({
-          connectToSortable: '[sortable]',
-          revert: true,
-          helper: 'clone',
-          appendTo: 'body',
-          start: function(ui, element) {
-            scope.draggedElement = $(this).data('attraction');
-            // debugger;
-          }
-        });
+        // if the element is removed from the first container
+        if (ui.item.sortable.source.hasClass('draggable-element-container') &&
+          ui.item.sortable.droptarget &&
+          ui.item.sortable.droptarget != ui.item.sortable.source &&
+          ui.item.sortable.droptarget.hasClass('connected-drop-target-sortable')) {
+          // restore the removed item
+          debugger
+          ui.item.sortable.sourceModel.push(ui.item.sortable.model);
+        }
       }
     };
-  }).directive('sortable', function() {
-    return {
-      // A = attribute, E = Element, C = Class and M = HTML Comment
-      restrict: 'A',
-      //The link function is responsible for registering DOM listeners as well as updating the DOM.
-      link: function(scope, element, attrs) {
-        element.sortable({
-          revert: true,
-          connectWith: '[sortable]',
-          forcePlaceholderSize: true,
-          beforeStop: function(e, ui, scope) {
-            // console.log(JSON.parse(ui.item.context.dataset.attraction));
-            var a = JSON.parse(ui.item.context.dataset.attraction);
-            var b = JSON.parse(this.parentElement.dataset.stage);
-            b.attraction.push(a);
-            debugger;
-          },
-        });
-        $('ul, li').disableSelection();
-      }
-    };
-  });
+
+    $scope.sortableOptions = {};
+
+
+  }]);
