@@ -26,16 +26,19 @@ angular.module('yeomanProject')
     $scope.draggableOptions = {
       connectWith: ".connected-drop-target-sortable",
       update: function(e, ui) {
-
-        // if the element is removed from the first container
-        if (ui.item.sortable.source.hasClass('draggable-element-container') &&
-          ui.item.sortable.droptarget &&
-          ui.item.sortable.droptarget != ui.item.sortable.source &&
-          ui.item.sortable.droptarget.hasClass('connected-drop-target-sortable')) {
-          // restore the removed item
-          debugger
-          ui.item.sortable.sourceModel.push(ui.item.sortable.model);
-          // ui.item.sortable.cancel();
+        var targetList = ui.item.sortable.droptargetModel;
+        var sourceList = ui.item.sortable.sourceModel;
+        if (targetList === sourceList) {
+          ui.item.sortable.cancel();
+          return;
+        } else {
+          var totalDuration = sumOfDuration(targetList);
+          if ((totalDuration + parseInt(ui.item.sortable.model.duration)) <= 11) {
+            targetList.splice(ui.item.sortable.dropindex, 0, ui.item.sortable.model);
+          } else {
+            ui.item.sortable.cancel();
+            alert('Cannot add attraction as duration is exceeding 11 hours');
+          }
         }
       }
     };
@@ -43,10 +46,14 @@ angular.module('yeomanProject')
     $scope.sortableOptions = {
       // connectWith: ".connected-drop-target-sortable"
     };
-    // debugger
-    // $scope.$watchCollection('attractions', function() {
-    //   $scope.attractions = orderByFilter($scope.attractions, ['attractionId']);
-    // });
 
+    $scope.sortableOptions = {};
+    function sumOfDuration (list) {
+      var sum = 0;
+      angular.forEach(list, function(item) {
+        sum += parseInt(item.duration);
+      });
+      return sum;
+    }
 
   }]);
