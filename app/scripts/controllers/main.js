@@ -33,8 +33,10 @@ angular.module('yeomanProject')
     $scope.sortableOptions = {
       connectWith: ".connected-drop-target-sortable",
       update: function(e, ui) {
-		// In case the change occures in the same container
-        if (this === ui.item.parent()[0]) {
+        // In case the change occures in the same container
+        debugger
+        if (this === ui.item.parent()[0] && $(this).attr('data-stage-label') !== ui.item.sortable.droptarget.attr('data-stage-label')) {
+          debugger
           addAttraction(e, ui);
         }
       }
@@ -61,7 +63,7 @@ angular.module('yeomanProject')
     }
 
     function addAttraction(e, ui) {
-        debugger;
+      debugger;
       var targetList = ui.item.sortable.droptargetModel;
       var totalDuration = sumOfDuration(targetList);
       if (ui.item.sortable.model == undefined ||
