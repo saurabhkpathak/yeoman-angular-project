@@ -25,15 +25,18 @@ angular.module('yeomanProject')
     });
     $scope.draggableOptions = {
       connectWith: ".connected-drop-target-sortable",
-      receive: function(e, ui) {
+      update: function(e, ui) {
         addAttraction(e, ui);
       }
     };
 
     $scope.sortableOptions = {
       connectWith: ".connected-drop-target-sortable",
-      receive: function(e, ui) {
-        addAttraction(e, ui);
+      update: function(e, ui) {
+		// In case the change occures in the same container
+        if (this === ui.item.parent()[0]) {
+          addAttraction(e, ui);
+        }
       }
     };
 
