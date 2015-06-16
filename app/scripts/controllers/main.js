@@ -25,7 +25,7 @@ angular.module('yeomanProject')
     });
     $scope.draggableOptions = {
       connectWith: ".connected-drop-target-sortable",
-      update: function(e, ui) {
+      receive: function(e, ui) {
         addAttraction(e, ui);
       }
     };
