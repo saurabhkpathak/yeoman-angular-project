@@ -37,6 +37,18 @@ angular.module('yeomanProject')
       }
     };
 
+    $scope.fixTimeSlot = function(attractionList, baseTime) {
+      baseTime = baseTime ? baseTime : "9:00";
+      var temp = baseTime;
+      angular.forEach(attractionList, function(attraction) {
+        attraction.time = temp;
+        // temp.setHours(temp.getHours() + parseInt(attraction.duration.getHours()));
+        // temp.setHours(temp.getHours() + parseInt(attraction.duration.getHours()));
+        temp = parseInt(temp) + parseInt(attraction.duration) + ":00";
+      });
+      return attractionList;
+    }
+
     function sumOfDuration(list) {
       var sum = 0;
       angular.forEach(list, function(item) {
@@ -46,7 +58,7 @@ angular.module('yeomanProject')
     }
 
     function addAttraction(e, ui) {
-      debugger;
+        debugger;
       var targetList = ui.item.sortable.droptargetModel;
       var totalDuration = sumOfDuration(targetList);
       if (ui.item.sortable.model == undefined ||
