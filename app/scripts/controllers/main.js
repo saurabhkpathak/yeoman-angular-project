@@ -34,25 +34,28 @@ angular.module('yeomanProject')
       connectWith: ".connected-drop-target-sortable",
       update: function(e, ui) {
         // In case the change occures in the same container
-        debugger
         if (this === ui.item.parent()[0] && $(this).attr('data-stage-label') !== ui.item.sortable.droptarget.attr('data-stage-label')) {
-          debugger
           addAttraction(e, ui);
         }
       }
     };
 
     $scope.fixTimeSlot = function(attractionList, baseTime) {
-      baseTime = baseTime ? baseTime : "9:00";
-      var temp = baseTime;
+      baseTime = baseTime ? baseTime : '9:00';
+      var durationTime, currTime, temp = baseTime;
       angular.forEach(attractionList, function(attraction) {
         attraction.time = temp;
-        // temp.setHours(temp.getHours() + parseInt(attraction.duration.getHours()));
-        // temp.setHours(temp.getHours() + parseInt(attraction.duration.getHours()));
-        temp = parseInt(temp) + parseInt(attraction.duration) + ":00";
+        durationTime = attraction.duration.split(':');
+        currTime = temp.split(':');
+        if (parseInt(durationTime[1]) + parseInt(currTime[1]) !== 60) {
+          temp = (parseInt(durationTime[0]) + parseInt(currTime[0])) + ':' +
+                  (parseInt(durationTime[1]) + parseInt(currTime[1]));
+        } else {
+          temp = parseInt(durationTime[0]) + parseInt(currTime[0]) + 1 + ':00';
+        }
       });
       return attractionList;
-    }
+    };
 
     function sumOfDuration(list) {
       var sum = 0;
@@ -63,10 +66,9 @@ angular.module('yeomanProject')
     }
 
     function addAttraction(e, ui) {
-      debugger;
       var targetList = ui.item.sortable.droptargetModel;
       var totalDuration = sumOfDuration(targetList);
-      if (ui.item.sortable.model == undefined ||
+      if (ui.item.sortable.model === undefined ||
         (totalDuration + parseInt(ui.item.sortable.model.duration)) > 11) {
         ui.item.sortable.cancel();
         alert('Cannot add attraction as duration is exceeding 11 hours');
