@@ -43,13 +43,15 @@ angular.module('yeomanProject')
     $scope.fixTimeSlot = function(attractionList, baseTime) {
       baseTime = baseTime ? baseTime : '9:00';
       var durationTime, currTime, temp = baseTime;
+      var hrs, mins;
       angular.forEach(attractionList, function(attraction) {
         attraction.time = temp;
         durationTime = attraction.duration.split(':');
         currTime = temp.split(':');
         if (parseInt(durationTime[1]) + parseInt(currTime[1]) !== 60) {
-          temp = (parseInt(durationTime[0]) + parseInt(currTime[0])) + ':' +
-                  (parseInt(durationTime[1]) + parseInt(currTime[1]));
+          hrs = parseInt(durationTime[0]) + parseInt(currTime[0]);
+          mins = parseInt(durationTime[1]) + parseInt(currTime[1]);
+          temp = mins ? (hrs + ':' + mins) : (hrs + ':00');
         } else {
           temp = parseInt(durationTime[0]) + parseInt(currTime[0]) + 1 + ':00';
         }
