@@ -24,6 +24,10 @@ angular
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
+      .when('/slider', {
+        templateUrl: 'views/slider.html',
+        controller: 'SliderCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });

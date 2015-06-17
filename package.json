@@ -1,7 +1,9 @@
 {
   "name": "html5application1",
   "version": "0.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "lodash": "^3.9.3"
+  },
   "repository": {},
   "devDependencies": {
     "grunt": "^0.4.5",
