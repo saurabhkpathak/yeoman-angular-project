@@ -1,1 +1,27 @@
-<p>This is the slider view.</p>
+<div>
+<button ng-click="switchImages('left')">Switch Left</button>
+<ul>
+  <li ng-class="{'vis': pos == 0}" class="list-image">
+    <img src="images/download.jpg">
+  </li>
+  <li ng-class="{'vis': (pos >= 0 && pos <2)}" class="list-image">
+    <img src="images/download (1).jpg">
+  </li>
+  <li ng-class="{'vis': (pos >= 0 && pos <3)}" class="list-image">
+    <img src="images/download (2).jpg">
+  </li>
+  <li ng-class="{'vis': (pos >= 0 && pos <4)}" class="list-image">
+    <img src="images/download (3).jpg">
+  </li>
+  <li ng-class="{'vis': (pos > 0 && pos < 5)}" class="list-image">
+    <img src="images/download (4).jpg">
+  </li>
+  <li ng-class="{'vis': (pos > 1 && pos <5)}" class="list-image">
+    <img src="images/download (5).jpg">
+  </li>
+  <li ng-class="{'vis': pos == 3}" class="list-image">
+    <img src="images/download (6).jpg">
+  </li>
+</ul>
+<button ng-click="switchImages('right')">Switch Right</button>
+</div>
