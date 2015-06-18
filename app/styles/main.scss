@@ -101,7 +101,11 @@ li {
 }
 .list-image {
   display: none;
+  width: 24%;
+  img {
+    width: 100%;
+  }
 }
 .vis {
-  display: block;
+  display: inline-block;
 }
