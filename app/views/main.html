@@ -1,3 +1,8 @@
 <div>
-hello
+<button ng-click="createNewCard()">Add Card</button>
+<div ng-repeat="card in cards">
+  Order Number<input type="text" ng-model="card.orderNum" />
+  Quantity<input type="number" ng-model="card.quantity" />
+  Locality<input type="text" ng-model="card.locality" />
+</div>
 </div>
