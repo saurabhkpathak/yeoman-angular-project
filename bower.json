@@ -15,5 +15,5 @@
     "angular-mocks": "^1.3.0"
   },
   "appPath": "app",
-  "moduleName": "html5Application1App"
+  "moduleName": "yumitzApp"
 }

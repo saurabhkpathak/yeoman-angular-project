@@ -2,16 +2,14 @@
 
 /**
  * @ngdoc function
- * @name html5Application1App.controller:MainCtrl
+ * @name yumitzApp.controller:MainCtrl
  * @description
  * # MainCtrl
- * Controller of the html5Application1App
+ * Controller of the yumitzApp
  */
-angular.module('yeomanProject')
-  .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+angular.module('yumitzApp')
+  .controller('MainCtrl', function ($rootScope, $location) {
+      if (!$rootScope.isAuthorised) {
+          $location.path('/');
+      }
   });

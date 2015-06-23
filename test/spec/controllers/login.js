@@ -1,17 +1,17 @@
 'use strict';
 
-describe('Controller: MyrouteCtrl', function () {
+describe('Controller: LoginCtrl', function () {
 
   // load the controller's module
-  beforeEach(module('yeomanProject'));
+  beforeEach(module('yumitzApp'));
 
-  var MyrouteCtrl,
+  var LoginCtrl,
     scope;
 
   // Initialize the controller and a mock scope
   beforeEach(inject(function ($controller, $rootScope) {
     scope = $rootScope.$new();
-    MyrouteCtrl = $controller('MyrouteCtrl', {
+    LoginCtrl = $controller('LoginCtrl', {
       $scope: scope
     });
   }));

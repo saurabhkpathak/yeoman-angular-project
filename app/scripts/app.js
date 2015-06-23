@@ -2,14 +2,14 @@
 
 /**
  * @ngdoc overview
- * @name html5Application1App
+ * @name yumitzApp
  * @description
- * # html5Application1App
+ * # yumitzApp
  *
  * Main module of the application.
  */
 angular
-  .module('yeomanProject', [
+  .module('yumitzApp', [
     'ngAnimate',
     'ngCookies',
     'ngResource',
@@ -20,16 +20,12 @@ angular
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
+        templateUrl: 'views/login.html',
+        controller: 'LoginCtrl'
+      })
+      .when('/main', {
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
-      })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl'
-      })
-      .when('/myroute', {
-        templateUrl: 'views/myroute.html',
-        controller: 'MyrouteCtrl'
       })
       .otherwise({
         redirectTo: '/'
