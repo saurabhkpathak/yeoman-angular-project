@@ -109,15 +109,15 @@ img {
 
 
 .jcarousel-wrapper {
-  margin: 20px auto;
+  // margin: 20px auto;
   position: relative;
-  border: 10px solid #fff;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  -webkit-box-shadow: 0 0 2px #999;
-  -moz-box-shadow: 0 0 2px #999;
-  box-shadow: 0 0 2px #999;
+  // border: 10px solid #fff;
+  // -webkit-border-radius: 5px;
+  // -moz-border-radius: 5px;
+  // border-radius: 5px;
+  // -webkit-box-shadow: 0 0 2px #999;
+  // -moz-box-shadow: 0 0 2px #999;
+  // box-shadow: 0 0 2px #999;
 }
 /** Carousel **/
 
@@ -218,7 +218,7 @@ img {
 }
 .hotel-tab, .login-tab {
   color: #fff;
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-weight: lighter;
   font-size: 18px;
   margin-right: 15px;
@@ -240,9 +240,10 @@ img {
   padding: 21px 10px;
   background-color: #689F38;
   color: #fff;
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-size: 18px;
   line-height: 1;
+  margin-bottom: 0;
 }
 .featured-packs {
   margin-bottom: 60px;
@@ -253,7 +254,7 @@ img {
   padding: 40px 0;
 }
 .why-us-head {
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-size: 30px;
   color: #fff;
   font-weight: lighter;
@@ -274,7 +275,7 @@ img {
   margin-top: 13px;
 }
 .plan, .vacation {
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-weight: lighter;
   color: #ecf0f1;
 }
@@ -286,7 +287,7 @@ img {
   margin-bottom: 60px;
 }
 .search {
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   padding: 8px;
   font-size: 14px;
   float: right;
@@ -301,7 +302,7 @@ img {
   width: 49%;
 }
 .city, .date {
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   padding: 8px;
   font-size: 14px;
   &::-webkit-input-placeholder {
@@ -322,19 +323,42 @@ img {
   display: block;
   min-height: 293px;
   padding: 10px;
+  position: relative;
+  padding-bottom: 40px;
 }
 .planned-city {
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
   font-style: italic;
   font-size: 22px;
   color: rgba(0,0,0,0.87);
 }
 .planned-city-description {
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   color: rgba(0,0,0,0.78);
 }
 .plan-it-button {
-
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  text-align: center;
+  padding: 8px 0;
+  width: 60%;
+  margin-left: calc(-30%);
+  background-color: #689f38;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+.plan-item {
+  background-color: #fff;
+  display: block;
+}
+.plan-item-description {
+  min-height: 585px;
+  position: relative;
+}
+.item-description-small {
+  position: absolute;
+  bottom: 0;
 }

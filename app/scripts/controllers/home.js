@@ -8,9 +8,7 @@
  * Controller of the yeomanProject
  */
 angular.module('yeomanProject')
-  .controller('HomeCtrl',[
-    '$scope',
-    function ($scope) {
+  .controller('HomeCtrl', function ($scope) {
       $scope.name = 'Saurabh';
     }
-  ]);
+  );
