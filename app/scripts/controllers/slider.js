@@ -18,7 +18,6 @@ angular.module('yeomanProject')
     return {
       restrict: 'A',
       link: function() {
-        debugger
         (function($) {
           $(function() {
             var jcarousel = $('.jcarousel');

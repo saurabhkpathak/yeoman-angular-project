@@ -10,6 +10,7 @@
 
 body {
   padding: 0;
+  background-image: url('../images/backgroundImage.png');
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -81,6 +82,9 @@ body {
 }
 li {
     list-style: none;
+}
+img {
+  width: 100%;
 }
 .package-heading, .attraction-heading {
     border-bottom: 1px solid grey;
@@ -204,23 +208,133 @@ li {
   -moz-box-shadow: 0 0 2px #F0EFE7;
   box-shadow: 0 0 2px #F0EFE7;
 }
+
+// home page styling
+.no-padding {
+  padding: 0;
+}
+.no-margin {
+  margin: 0;
+}
+.hotel-tab, .login-tab {
+  color: #fff;
+  font-family: Roboto;
+  font-weight: lighter;
+  font-size: 18px;
+  margin-right: 15px;
+  line-height: 1;
+}
 .head-section {
   text-align: right;
   background-color: #689F38;
-  padding: 10px 0;
-  color: #fff;
+  padding: 20px 0;
+  margin-bottom: 60px;
 }
 .plan-section {
   text-align: right;
 }
 .plan-vacation {
-  margin: 60px 20px;
+  margin-bottom: 170px;
 }
 .featured-packs-head, .find-destination-head {
-  padding: 10px 0;
+  padding: 21px 10px;
   background-color: #689F38;
-  margin-bottom: 20px;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 18px;
+  line-height: 1;
+}
+.featured-packs {
+  margin-bottom: 60px;
 }
 .why-us {
-  margin: 60px 0;
+  background-color: rgba(69,90,100,0.8);
+  margin-bottom: 60px;
+  padding: 40px 0;
+}
+.why-us-head {
+  font-family: Roboto;
+  font-size: 30px;
+  color: #fff;
+  font-weight: lighter;
+}
+.why-us-img {
+  padding-left: 40px;
+  img {
+    width: 160px;
+  }
+}
+.company-logo-text {
+  font-family: Avant Garde;
+  font-size: 18px;
+  color: #fff;
+  margin-left: 15px;
+}
+.company-logo {
+  margin-top: 13px;
+}
+.plan, .vacation {
+  font-family: Roboto;
+  font-weight: lighter;
+  color: #ecf0f1;
+}
+.plan {
+  font-size: 48px;
+}
+.vacation {
+  font-size: 72px;
+  margin-bottom: 60px;
+}
+.search {
+  font-family: Roboto;
+  padding: 8px;
+  font-size: 14px;
+  float: right;
+  color: #fff;
+  background-color: #689f38;
+  text-align: left;
+}
+.city {
+  margin-bottom: 16px;
+}
+.date, .search {
+  width: 49%;
+}
+.city, .date {
+  font-family: Roboto;
+  padding: 8px;
+  font-size: 14px;
+  &::-webkit-input-placeholder {
+    color: rgba(96,125,139,0.5);
+  }
+  &::-moz-placeholder { /* Firefox 19+ */
+    color: rgba(96,125,139,0.5);
+  }
+  &:-ms-input-placeholder {
+    color: rgba(96,125,139,0.5);
+  }
+  &:-moz-placeholder { /* Firefox 18- */
+    color: rgba(96,125,139,0.5);
+  }
+}
+.plan-description {
+  background-color: #fff;
+  display: block;
+  min-height: 293px;
+  padding: 10px;
+}
+.planned-city {
+  font-family: Roboto;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 22px;
+  color: rgba(0,0,0,0.87);
+}
+.planned-city-description {
+  font-family: Roboto;
+  font-size: 14px;
+  color: rgba(0,0,0,0.78);
+}
+.plan-it-button {
+
 }
