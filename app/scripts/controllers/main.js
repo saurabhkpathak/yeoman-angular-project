@@ -14,6 +14,9 @@ angular.module('yeomanProject')
       $scope.stagesItenary = data.itinerary;
       console.log($scope.stagesItenary);
     });
+    // var newDay = {
+    //
+    // }
 
     // Load the attractions list
     $http.get('http://localhost:9000/scripts/attractions.json').success(function(data) {
@@ -38,6 +41,19 @@ angular.module('yeomanProject')
           addAttraction(e, ui);
         }
       }
+    };
+    $scope.addDay = function() {
+        var lastday = $scope.stagesItenary.stages[$scope.stagesItenary.stages.length - 1];
+        // var dateLast = lastday.date.split('-');
+        var newDay = {
+            stg_label: parseInt(lastday.stg_label) + 1,
+            country: lastday.country,
+            city: lastday.city,
+            heading: lastday.heading,
+            date: lastday.date,
+            attraction: []
+        }
+        $scope.stagesItenary.stages.push(newDay);
     };
 
     $scope.fixTimeSlot = function(attractionList, baseTime) {
