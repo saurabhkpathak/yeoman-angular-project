@@ -25,6 +25,10 @@ angular.module('yeomanProject')
         return [x];
       });
 
+      $scope.draggables2 = $scope.attractions.map(function(x) {
+        return [x];
+      });
+
     });
     $scope.draggableOptions = {
       connectWith: ".connected-drop-target-sortable",
