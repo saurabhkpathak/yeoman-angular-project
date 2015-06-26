@@ -294,9 +294,21 @@ img {
   color: #fff;
   background-color: #689f38;
   text-align: left;
+  background-image: url('../images/searchIcon.png');
+  background-color: #689f38;
+  background-repeat: no-repeat;
+  background-position: center right 10px;
 }
 .city {
   margin-bottom: 16px;
+  background-image: url('../images/locationIcon.png');
+  background-repeat: no-repeat;
+  background-position: center right 10px;
+}
+.date {
+  background-image: url('../images/calender-icon.png');
+  background-repeat: no-repeat;
+  background-position: center right 10px;
 }
 .date, .search {
   width: 49%;
