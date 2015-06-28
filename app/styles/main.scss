@@ -248,18 +248,18 @@ img {
 .featured-packs {
   margin-bottom: 60px;
 }
-.why-us {
+.why-us, .testimonial {
   background-color: rgba(69,90,100,0.8);
   margin-bottom: 60px;
   padding: 40px 0;
 }
-.why-us-head {
+.why-us-head, .testimonial-head {
   font-family: 'Roboto', sans-serif;
   font-size: 30px;
   color: #fff;
   font-weight: lighter;
 }
-.why-us-img {
+.why-us-img, .testimonial-img {
   padding-left: 40px;
   img {
     width: 160px;
@@ -373,4 +373,60 @@ img {
 .item-description-small {
   position: absolute;
   bottom: 0;
+}
+
+
+
+
+
+
+.suggested-plans-wrapper {
+    background: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    h1 {
+        font-weight: 700;
+        font-style: italic;
+        font-size: 20px;
+    }
+    span {
+        font-size: 16px;
+        line-height: 25px;
+    }
+}
+.suggested-plans-heading {
+    padding: 21px 10px;
+    background-color: #689F38;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+.md-hidden {
+    display: none;
+}
+.suggested-content-desc {
+    padding-bottom: 140px;
+    position: relative;
+}
+.suggested-quad-desc {
+    background: #eceff1;
+}
+.suggested-view-button {
+    display: block;
+    margin: 0 auto;
+    display: block;
+    margin: 0 auto;
+    background: #689F38;
+    border-radius: 0;
+    border: none;
+    color: #fff;
+    padding: 8px 45px;
+    font-family: roboto;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 17px;
+    left: 50%;
+    margin-left: -50px;
+}
+.suggested-quad-desc {
+    padding-bottom: 141px;
 }
