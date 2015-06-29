@@ -263,6 +263,7 @@ img {
   padding: 40px 0;
   color: #fff;
   font-family: roboto;
+  font-weight: 300;
   a {
       color: #9ccc65;
   }
@@ -271,7 +272,6 @@ img {
   font-family: 'Roboto', sans-serif;
   font-size: 30px;
   color: #fff;
-  font-weight: 300;
 }
 .why-us-list {
     line-height: 35px;
@@ -280,11 +280,21 @@ img {
         font-size: 20px;
     }
 }
+.testimonial-content, .why-us-content  {
+    padding-left: 10px;
+}
+.testimonial-content {
+    padding-right: 7%;
+}
 .why-us-img, .testimonial-img {
-  padding-left: 40px;
+    padding-right: 15px;
+  text-align: center;
   img {
     width: 160px;
   }
+}
+.testinomy-author {
+    text-align: right;
 }
 .company-logo-text {
   font-family: Avant Garde;
