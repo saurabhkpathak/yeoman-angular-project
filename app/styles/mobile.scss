@@ -10,6 +10,7 @@
     }
     .suggested-content-desc {
         height: 250px;
+        padding: 0;
     }
     .suggested-plans-full-image {
         display: none;
@@ -23,13 +24,23 @@
     .float-on-mobile {
         min-height: 250px;
         position: relative;
+        padding-left: 15px;
         width: 50%;
         float: left;
     }
     .signup-heading {
         margin-bottom: 38px;
     }
-
+    .why-us-img {
+        display: none;
+    }
+    .why-us {
+          padding: 40px 28px;
+          font-size: 16px;
+    }
+    .why-us-list li {
+        font-size: 16px;
+    }
     .footer-links {
         .link-section {
             padding-left: 25px;
