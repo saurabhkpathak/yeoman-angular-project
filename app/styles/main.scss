@@ -239,20 +239,113 @@ img {
     }
 }
 /* Header CSS End */
-.plan-section {
-  text-align: right;
+
+/* Plan Your Vacation CSS Start */
+.banner-section {
+    padding-bottom: 172px;
 }
 .plan-vacation {
-  margin-bottom: 170px;
+    padding: 20px 0 53px;
 }
+.company-logo {
+    img {
+        width: auto;
+    }
+}
+.vacation-heading {
+    font-family: 'Roboto', sans-serif;
+    text-align: right;
+    color: #fff;
+    h2 {
+        font-size: 72px;
+        font-weight: 300;
+        line-height: 1;
+        margin: 0;
+    }
+    h2 span {
+        font-size: 48px;
+        display: block;
+    }
+}
+.plan-vacation-form {
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+
+    div {
+        padding-left: 87px
+    }
+    input {
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        border: none;
+        height: 36px;
+        padding: 8px 44px 8px 10px;
+    }
+    &::-webkit-input-placeholder {
+      color: rgba(96,125,139,0.5);
+    }
+    &::-moz-placeholder { /* Firefox 19+ */
+      color: rgba(96,125,139,0.5);
+    }
+    &:-ms-input-placeholder {
+      color: rgba(96,125,139,0.5);
+    }
+    &:-moz-placeholder { /* Firefox 18- */
+      color: rgba(96,125,139,0.5);
+    }
+    .city {
+      margin-bottom: 16px;
+      background-image: url('../images/locationIcon.png');
+      background-repeat: no-repeat;
+      background-position: center right 10px;
+      width: 100%;
+    }
+    .date {
+      background-image: url('../images/calender-icon.png');
+      background-repeat: no-repeat;
+      background-position: center right 10px;
+      width: 50%;
+      float: left;
+    }
+    .search {
+        background-image: url('../images/searchIcon.png');
+        background-color: #689f38;
+        background-repeat: no-repeat;
+        background-position: center right 10px;
+        border: none;
+        font-family: 'Roboto', sans-serif;
+        padding: 8px 10px;
+        font-size: 14px;
+        float: right;
+        color: #fff;
+        text-align: left;
+        width: 47.5%;
+        height: 36px;
+    }
+
+    .add-city {
+        background: url("/images/addicon.png") 0px 0px no-repeat;
+        font-size: 14px;
+        font-weight: 100;
+        line-height: 24px;
+        color: #fff;
+        position: absolute;
+        right: -67px;
+        top: 6px;
+        padding-left: 33px;
+    }
+}
+/* Plan Your Vacation CSS End */
+
 .featured-packs-head, .find-destination-head {
-  padding: 21px 10px;
-  background-color: #689F38;
-  color: #fff;
-  font-family: 'Roboto', sans-serif;
-  font-size: 18px;
-  line-height: 1;
-  margin-bottom: 0;
+    display: block;
+    padding: 21px 10px;
+    background-color: #689F38;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 1;
+    margin-bottom: 0;
 }
 .featured-packs {
   margin-bottom: 60px;
@@ -284,71 +377,6 @@ img {
   padding-left: 40px;
   img {
     width: 160px;
-  }
-}
-.company-logo-text {
-  font-family: Avant Garde;
-  font-size: 18px;
-  color: #fff;
-  margin-left: 15px;
-}
-.company-logo {
-  margin-top: 13px;
-}
-.plan, .vacation {
-  font-family: 'Roboto', sans-serif;
-  font-weight: lighter;
-  color: #ecf0f1;
-}
-.plan {
-  font-size: 48px;
-}
-.vacation {
-  font-size: 72px;
-  margin-bottom: 60px;
-}
-.search {
-  font-family: 'Roboto', sans-serif;
-  padding: 8px;
-  font-size: 14px;
-  float: right;
-  color: #fff;
-  background-color: #689f38;
-  text-align: left;
-  background-image: url('../images/searchIcon.png');
-  background-color: #689f38;
-  background-repeat: no-repeat;
-  background-position: center right 10px;
-}
-.city {
-  margin-bottom: 16px;
-  background-image: url('../images/locationIcon.png');
-  background-repeat: no-repeat;
-  background-position: center right 10px;
-}
-.date {
-  background-image: url('../images/calender-icon.png');
-  background-repeat: no-repeat;
-  background-position: center right 10px;
-}
-.date, .search {
-  width: 49%;
-}
-.city, .date {
-  font-family: 'Roboto', sans-serif;
-  padding: 8px;
-  font-size: 14px;
-  &::-webkit-input-placeholder {
-    color: rgba(96,125,139,0.5);
-  }
-  &::-moz-placeholder { /* Firefox 19+ */
-    color: rgba(96,125,139,0.5);
-  }
-  &:-ms-input-placeholder {
-    color: rgba(96,125,139,0.5);
-  }
-  &:-moz-placeholder { /* Firefox 18- */
-    color: rgba(96,125,139,0.5);
   }
 }
 .plan-description {
