@@ -260,6 +260,7 @@ img {
 .why-us, .testimonial {
   background-color: rgba(69,90,100,0.8);
   margin-bottom: 60px;
+  margin-top: 60px;
   padding: 40px 0;
   color: #fff;
   font-family: roboto;
@@ -285,6 +286,28 @@ img {
 }
 .testimonial-content {
     padding-right: 7%;
+    &::before, &::after{
+        content: '';
+        position: absolute;
+        display: block;
+        height: 55px;
+        width: 115px;
+        background-repeat: no-repeat;
+        background-size: 45px;
+    }
+    &::before {
+        background-image: url(../images/quoteiconLeft.png);
+        top: 4px;
+        left: -60px;
+    }
+    &::after {
+        background-image: url(../images/quoteIconbottom.png);
+        bottom: 0px;
+        right: -50px;
+    }
+}
+.testinomy {
+  line-height: 30px;
 }
 .why-us-img, .testimonial-img {
     padding-right: 15px;
@@ -368,6 +391,69 @@ img {
   padding: 10px;
   position: relative;
   padding-bottom: 40px;
+  &::before, &::after {
+    content: '';
+    height: 16px;
+    width: 29px;
+    display: block;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 50%;
+    margin-left: -14px;
+    z-index: 1;
+  }
+}
+.plan-description:nth-child(even) {
+    &::before {
+      background-image: url(../images/upwardWhiteArrow.png);
+      top: -15px;
+    }
+    &::after {
+        display: none;
+    }
+}
+.plan-description:nth-child(odd) {
+    &::after {
+      background-image: url(../images/downwardWhiteArrow.png);
+      bottom: -15px;
+    }
+    &::before {
+        display: none;
+    }
+}
+.float-on-mobile {
+     min-height: 250px;
+}
+.right-arrow , .left-arrow {
+    &::before, &::after {
+      content: '';
+      height: 30px;
+      width: 20px;
+      display: block;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 50%;
+      margin-top: -15px;
+      z-index: 1;
+    }
+}
+.right-arrow {
+    &::after {
+        background-image: url(../images/rightWhiteArrow.png);
+        right: -18px;
+    }
+    &::before {
+        display: none;
+    }
+}
+.left-arrow {
+    &::before {
+        background-image: url(../images/leftWhiteArrow.png);
+        left: -15px;
+    }
+    &::after {
+        display: none;
+    }
 }
 .planned-city {
   font-family: 'Roboto', sans-serif;
