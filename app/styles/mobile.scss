@@ -1,4 +1,47 @@
 @media (max-width: 991px) {
+    /* Header CSS Start */
+    .header {
+        .navbar-header,
+        .navbar-collapse {
+            margin: 0;
+        }
+        .navbar-nav {
+            margin: 0;
+            float: none;
+        }
+
+        .navbar-toggle {
+            background: url("/images/hamburger-icon.png") center center no-repeat;
+            border-radius: 0;
+            border: 0;
+            width: 64px;
+            height: 60px;
+            padding: 0;
+            margin: 0;
+        }
+        .navbar-toggle:hover,
+        .navbar-toggle:focus {
+            background: url("/images/hamburger-icon.png") center center no-repeat;
+        }
+
+        .navbar-collapse {
+            border-color: #fff;
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 60px;
+        }
+
+        .navbar-default .navbar-nav > li > a {
+            background: #6a7b83;
+            padding: 20px;
+        }
+
+        .navbar-nav > li {
+            border-bottom: 1px #fff solid;
+        }
+    }
+    /* Header CSS End */
     .signup-section h2 {
         font-size: 18px;
     }
