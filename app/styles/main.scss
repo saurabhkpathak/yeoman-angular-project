@@ -137,7 +137,7 @@ img {
 .jcarousel img {
   display: block;
   max-width: 100%;
-  height: auto !important;
+  height: 230px;
 }
 /** Carousel Controls **/
 
@@ -261,12 +261,24 @@ img {
   background-color: rgba(69,90,100,0.8);
   margin-bottom: 60px;
   padding: 40px 0;
+  color: #fff;
+  font-family: roboto;
+  a {
+      color: #9ccc65;
+  }
 }
 .why-us-head, .testimonial-head {
   font-family: 'Roboto', sans-serif;
   font-size: 30px;
   color: #fff;
-  font-weight: lighter;
+  font-weight: 300;
+}
+.why-us-list {
+    line-height: 35px;
+    li {
+        list-style: initial;
+        font-size: 20px;
+    }
 }
 .why-us-img, .testimonial-img {
   padding-left: 40px;
@@ -342,7 +354,7 @@ img {
 .plan-description {
   background-color: #fff;
   display: block;
-  min-height: 293px;
+  min-height: 230px;
   padding: 10px;
   position: relative;
   padding-bottom: 40px;
@@ -397,6 +409,9 @@ img {
         font-size: 16px;
         line-height: 25px;
     }
+    img {
+        height: 100%;
+    }
 }
 .suggested-plans-heading {
     padding: 21px 10px;
@@ -409,11 +424,21 @@ img {
     display: none;
 }
 .suggested-content-desc {
-    padding-bottom: 140px;
+    min-height: 250px;
     position: relative;
 }
 .suggested-quad-desc {
     background: #eceff1;
+    min-height: 250px;
+}
+.suggested-quad-image {
+    height: 250px;
+}
+.hide-on-desktop {
+    display: none;
+}
+.suggested-plans-full-image {
+      height: 500px;
 }
 .suggested-view-button {
     display: block;
@@ -431,9 +456,6 @@ img {
     margin-bottom: 17px;
     left: 50%;
     margin-left: -50px;
-}
-.suggested-quad-desc {
-    padding-bottom: 141px;
 }
 /* Suggestion CSS End */
 .find-destination {
