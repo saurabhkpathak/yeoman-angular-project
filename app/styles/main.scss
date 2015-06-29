@@ -353,9 +353,11 @@ img {
 .why-us, .testimonial {
   background-color: rgba(69,90,100,0.8);
   margin-bottom: 60px;
+  margin-top: 60px;
   padding: 40px 0;
   color: #fff;
   font-family: roboto;
+  font-weight: 300;
   a {
       color: #9ccc65;
   }
@@ -364,7 +366,6 @@ img {
   font-family: 'Roboto', sans-serif;
   font-size: 30px;
   color: #fff;
-  font-weight: 300;
 }
 .why-us-list {
     line-height: 35px;
@@ -373,10 +374,107 @@ img {
         font-size: 20px;
     }
 }
+.testimonial-content, .why-us-content  {
+    padding-left: 10px;
+}
+.testimonial-content {
+    padding-right: 7%;
+    &::before, &::after{
+        content: '';
+        position: absolute;
+        display: block;
+        height: 55px;
+        width: 115px;
+        background-repeat: no-repeat;
+        background-size: 45px;
+    }
+    &::before {
+        background-image: url(../images/quoteiconLeft.png);
+        top: 4px;
+        left: -60px;
+    }
+    &::after {
+        background-image: url(../images/quoteIconbottom.png);
+        bottom: 0px;
+        right: -50px;
+    }
+}
+.testinomy {
+  line-height: 30px;
+}
 .why-us-img, .testimonial-img {
-  padding-left: 40px;
+    padding-right: 15px;
+  text-align: center;
   img {
     width: 160px;
+  }
+}
+.testinomy-author {
+    text-align: right;
+}
+.company-logo-text {
+  font-family: Avant Garde;
+  font-size: 18px;
+  color: #fff;
+  margin-left: 15px;
+}
+.company-logo {
+  margin-top: 13px;
+}
+.plan, .vacation {
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+  color: #ecf0f1;
+}
+.plan {
+  font-size: 48px;
+}
+.vacation {
+  font-size: 72px;
+  margin-bottom: 60px;
+}
+.search {
+  font-family: 'Roboto', sans-serif;
+  padding: 8px;
+  font-size: 14px;
+  float: right;
+  color: #fff;
+  background-color: #689f38;
+  text-align: left;
+  background-image: url('../images/searchIcon.png');
+  background-color: #689f38;
+  background-repeat: no-repeat;
+  background-position: center right 10px;
+}
+.city {
+  margin-bottom: 16px;
+  background-image: url('../images/locationIcon.png');
+  background-repeat: no-repeat;
+  background-position: center right 10px;
+}
+.date {
+  background-image: url('../images/calender-icon.png');
+  background-repeat: no-repeat;
+  background-position: center right 10px;
+}
+.date, .search {
+  width: 49%;
+}
+.city, .date {
+  font-family: 'Roboto', sans-serif;
+  padding: 8px;
+  font-size: 14px;
+  &::-webkit-input-placeholder {
+    color: rgba(96,125,139,0.5);
+  }
+  &::-moz-placeholder { /* Firefox 19+ */
+    color: rgba(96,125,139,0.5);
+  }
+  &:-ms-input-placeholder {
+    color: rgba(96,125,139,0.5);
+  }
+  &:-moz-placeholder { /* Firefox 18- */
+    color: rgba(96,125,139,0.5);
   }
 }
 .plan-description {
@@ -386,6 +484,69 @@ img {
   padding: 10px;
   position: relative;
   padding-bottom: 40px;
+  &::before, &::after {
+    content: '';
+    height: 16px;
+    width: 29px;
+    display: block;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 50%;
+    margin-left: -14px;
+    z-index: 1;
+  }
+}
+.plan-description:nth-child(even) {
+    &::before {
+      background-image: url(../images/upwardWhiteArrow.png);
+      top: -15px;
+    }
+    &::after {
+        display: none;
+    }
+}
+.plan-description:nth-child(odd) {
+    &::after {
+      background-image: url(../images/downwardWhiteArrow.png);
+      bottom: -15px;
+    }
+    &::before {
+        display: none;
+    }
+}
+.float-on-mobile {
+     min-height: 250px;
+}
+.right-arrow , .left-arrow {
+    &::before, &::after {
+      content: '';
+      height: 30px;
+      width: 20px;
+      display: block;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 50%;
+      margin-top: -15px;
+      z-index: 1;
+    }
+}
+.right-arrow {
+    &::after {
+        background-image: url(../images/rightWhiteArrow.png);
+        right: -18px;
+    }
+    &::before {
+        display: none;
+    }
+}
+.left-arrow {
+    &::before {
+        background-image: url(../images/leftWhiteArrow.png);
+        left: -15px;
+    }
+    &::after {
+        display: none;
+    }
 }
 .planned-city {
   font-family: 'Roboto', sans-serif;
