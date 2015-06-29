@@ -10,7 +10,7 @@
 
 body {
   padding: 0;
-  background-image: url('../images/backgroundImage.png');
+  background-image: url('../images/backgroundImage.jpg');
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -380,7 +380,7 @@ img {
         position: absolute;
         display: block;
         height: 55px;
-        width: 115px;
+        width: 45px;
         background-repeat: no-repeat;
         background-size: 45px;
     }
@@ -392,7 +392,7 @@ img {
     &::after {
         background-image: url(../images/quoteIconbottom.png);
         bottom: 0px;
-        right: -50px;
+        right: 12px;
     }
 }
 .testinomy {
