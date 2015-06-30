@@ -134,3 +134,22 @@
         }
     }
 }
+@media (max-width: 479px) {
+    .plan-vacation {
+        padding-bottom: 50px;
+    }
+    .company-logo,
+    .vacation-heading {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+    .company-logo {
+        margin: 0 0 30px;
+    }
+    .plan-vacation-form {
+        div {
+            padding-left: 20px;
+        }
+    }
+}
