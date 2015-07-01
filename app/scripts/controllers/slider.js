@@ -16,57 +16,63 @@ angular.module('yeomanProject')
     // ];
   }).directive('jCaraousel', function() {
     return {
-      restrict: 'A',
-      link: function() {
-        (function($) {
-          $(function() {
-            var jcarousel = $('.jcarousel');
+      restrict: 'E',
+      scope: {
+          sliderContent: '='
+        },
+      templateUrl: '../../views/slider.html',
+      link: function(scope) {
+          scope.$watch('scope.sliderContent', function() {
+              (function($) {
+                $(function() {
+                  var jcarousel = $('.jcarousel');
 
-            jcarousel
-            .on('jcarousel:reload jcarousel:create', function() {
-              var carousel = $(this),
-              width = carousel.innerWidth();
+                  jcarousel
+                  .on('jcarousel:reload jcarousel:create', function() {
+                    var carousel = $(this),
+                    width = carousel.innerWidth();
+                    if (width >= 600) {
+                      width = width / 4;
+                    } else if (width >= 350) {
+                      width = width / 2;
+                    }
 
-              if (width >= 600) {
-                width = width / 4;
-              } else if (width >= 350) {
-                width = width / 2;
-              }
+                    carousel.jcarousel('items').css('width', Math.ceil(width) + 'px');
+                  })
+                  .jcarousel({
+                    wrap: 'circular'
+                  });
 
-              carousel.jcarousel('items').css('width', Math.ceil(width) + 'px');
-            })
-            .jcarousel({
-              wrap: 'circular'
-            });
+                  $('.jcarousel-control-prev')
+                  .jcarouselControl({
+                    target: '-=1'
+                  });
 
-            $('.jcarousel-control-prev')
-            .jcarouselControl({
-              target: '-=1'
-            });
+                  $('.jcarousel-control-next')
+                  .jcarouselControl({
+                    target: '+=1'
+                  });
 
-            $('.jcarousel-control-next')
-            .jcarouselControl({
-              target: '+=1'
-            });
+                  $('.jcarousel-pagination')
+                  .on('jcarouselpagination:active', 'a', function() {
+                    $(this).addClass('active');
+                  })
+                  .on('jcarouselpagination:inactive', 'a', function() {
+                    $(this).removeClass('active');
+                  })
+                  .on('click', function(e) {
+                    e.preventDefault();
+                  })
+                  .jcarouselPagination({
+                    perPage: 1,
+                    item: function(page) {
+                      return '<a href="#' + page + '">' + page + '</a>';
+                    }
+                  });
+                });
+              })(jQuery);
+        });
 
-            $('.jcarousel-pagination')
-            .on('jcarouselpagination:active', 'a', function() {
-              $(this).addClass('active');
-            })
-            .on('jcarouselpagination:inactive', 'a', function() {
-              $(this).removeClass('active');
-            })
-            .on('click', function(e) {
-              e.preventDefault();
-            })
-            .jcarouselPagination({
-              perPage: 1,
-              item: function(page) {
-                return '<a href="#' + page + '">' + page + '</a>';
-              }
-            });
-          });
-        })(jQuery);
       }
     }
   });
