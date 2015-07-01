@@ -30,7 +30,11 @@ angular
       })
       .when('/home', {
         templateUrl: 'views/home.html',
-        controller: 'SliderCtrl'
+        controller: 'HomeCtrl'
+      })
+      .when('/searchResult', {
+        templateUrl: 'views/searchResult.html',
+        controller: 'HomeCtrl'
       })
       .otherwise({
         redirectTo: '/'

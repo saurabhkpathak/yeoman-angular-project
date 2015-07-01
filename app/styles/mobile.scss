@@ -134,3 +134,59 @@
         }
     }
 }
+@media (max-width: 479px) {
+    .plan-vacation {
+        padding-bottom: 50px;
+    }
+    .company-logo,
+    .vacation-heading {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+    .company-logo {
+        margin: 0 0 30px;
+    }
+    .plan-vacation-form {
+        div {
+            padding-left: 20px;
+        }
+    }
+
+    .suggested-plans-wrapper span {
+        overflow: hidden;
+        display: block;
+        max-height: 121px;
+    }
+    .testimonial-img img {
+        width: 126px;
+    }
+
+    .input-group.newsletter-form {
+        display: block;
+        .form-control,
+        .input-group-btn,
+        button {
+            width: 100%;
+            float: none;
+        }
+
+        .input-group-btn {
+            display: block;
+            margin-top: 10px;
+        }
+    }
+
+    .social-media a {
+        width: 70px;
+        height: 70px;
+    }
+
+    .footer-links h2 {
+        font-size: 24px;
+    }
+
+    .footer-links .link-section {
+        padding: 0 0 0 20px;
+    }
+}

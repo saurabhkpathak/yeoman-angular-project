@@ -1,31 +1,19 @@
-<!-- <p>This is the slider view.</p>
-<div contenteditable="">This div is contenteditable</div> -->
-<div j-caraousel class="jcarousel-wrapper">
-  <div class="jcarousel">
-    <ul>
-      <li>
-        <img src="images/img1.jpg" alt="Image 1">
-      </li>
-      <li>
-        <img src="images/img2.jpg" alt="Image 2">
-      </li>
-      <li>
-        <img src="images/img3.jpg" alt="Image 3">
-      </li>
-      <li>
-        <img src="images/img4.jpg" alt="Image 4">
-      </li>
-      <li>
-        <img src="images/img5.jpg" alt="Image 5">
-      </li>
-      <li>
-        <img src="images/img6.jpg" alt="Image 6">
-      </li>
-    </ul>
-  </div>
+<span class="col-md-12 no-padding featured-packs-head">{{sliderContent.heading}}</span>
+<div class="jcarousel-wrapper">
+<div class="jcarousel">
+  <ul>
+    <li ng-repeat="attraction in sliderContent.attractions track by $index">
+      <img src="{{attraction.imageUrl}}" ng-if="$even">
+      <span class="plan-description">
+        <b class="col-md-12 no-padding planned-city">{{attraction.imageHeading}}</b>
+        <span class="col-md-12 no-padding planned-city-description">{{attraction.details}}</span>
+        <span class="col-md-12 no-padding plan-it-button">Plan It</span>
+      </span>
+      <img src="images/Alaska-Image.png" ng-if="$odd">
+    </li>
+  </ul>
+</div>
 
-  <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
-  <a href="#" class="jcarousel-control-next">&rsaquo;</a>
-
-  <!-- <p class="jcarousel-pagination"></p> -->
+<a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+<a href="#" class="jcarousel-control-next">&rsaquo;</a>
 </div>
