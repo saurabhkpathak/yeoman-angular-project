@@ -373,7 +373,7 @@ img {
         position: absolute;
         display: block;
         height: 55px;
-        width: 115px;
+        width: 46px;
         background-repeat: no-repeat;
         background-size: 45px;
     }
@@ -385,7 +385,7 @@ img {
     &::after {
         background-image: url(../images/quoteIconbottom.png);
         bottom: 0px;
-        right: -50px;
+        right: 20px;
     }
 }
 .testinomy {
@@ -646,7 +646,7 @@ img {
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
     color: #fff;
-    padding: 50px 20px 200px;
+    padding: 50px 0px 200px;
 
     h2 {
         font-weight: 100;
@@ -773,3 +773,8 @@ img {
     text-align: center;
 }
 /* Footer CSS End */
+@media (min-width: 1200px) {
+  .container {
+    width: 1000px;
+  }
+}

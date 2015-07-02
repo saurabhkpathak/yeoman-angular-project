@@ -17,8 +17,14 @@ angular
     'ngSanitize',
     'ngTouch',
     'ui.sortable'
-  ])
-  .config(function ($routeProvider) {
+]).controller('mainController', function($scope, $location, $route) {
+    $scope.$on('$routeChangeSuccess', function(newVal, oldVal) {
+        if (oldVal !== newVal) {
+            $scope.routeClassName = $route.current.className;
+        }
+    });
+
+}).config(function ($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
@@ -30,11 +36,13 @@ angular
       })
       .when('/home', {
         templateUrl: 'views/home.html',
-        controller: 'HomeCtrl'
+        controller: 'HomeCtrl',
+        className: 'home'
       })
       .when('/searchResult', {
         templateUrl: 'views/searchResult.html',
-        controller: 'HomeCtrl'
+        controller: 'HomeCtrl',
+        className: 'searchResult'
       })
       .otherwise({
         redirectTo: '/'
