@@ -7,7 +7,11 @@
   color: #000;
   padding: 0.2em 0;
 }
-
+body {
+    background-attachment: fixed;
+    background-position: center 0;
+    font-family: Roboto;
+}
 #home {
   padding: 0;
   background-image: url('../images/backgroundImage.png');
@@ -91,34 +95,39 @@ img {
     padding-bottom: 172px;
 }
 .plan-vacation {
-    padding: 20px 0 53px;
+    padding: 20px 0 16px;
 }
 .company-logo {
     img {
         width: auto;
+        position: relative;
+        left: -2px;
     }
 }
 .vacation-heading {
     font-family: 'Roboto', sans-serif;
     text-align: right;
     color: #fff;
-    h2 {
-        font-size: 72px;
-        font-weight: 300;
-        line-height: 1;
-        margin: 0;
-    }
-    h2 span {
-        font-size: 48px;
-        display: block;
-    }
+    font-weight: 300;
+    padding-top: 4px;
+}
+.vacation-heading--plan {
+    font-size: 48px;
+    display: block;
+}
+.vacation-heading--vacation {
+    font-size: 72px;
+    display: inline-block;
+    top: -21px;
+    left: 4px;
+    position: relative;
 }
 .plan-vacation-form {
     font-family: 'Roboto', sans-serif;
     position: relative;
 
     div {
-        padding-left: 87px
+        padding-left: 16px
     }
     input {
         font-family: 'Roboto', sans-serif;
@@ -171,18 +180,24 @@ img {
 
     .add-city {
         background: url("/images/addicon.png") 0px 0px no-repeat;
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 100;
         line-height: 24px;
         color: #fff;
         position: absolute;
         right: -67px;
-        top: 6px;
-        padding-left: 33px;
+        top: 5px;
+        padding-left: 30px;
     }
 }
 /* Plan Your Vacation CSS End */
-
+.get-started {
+    padding: 17px 0;
+    padding-left: 16px;
+    font-size: 30px;
+    color: #fff;
+    letter-spacing: -0.1px;
+}
 .featured-packs-head, .find-destination-head {
     display: block;
     padding: 21px 10px;
@@ -192,18 +207,22 @@ img {
     font-size: 18px;
     line-height: 1;
     margin-bottom: 0;
+    padding-left: 19px;
 }
 .featured-packs {
   margin-bottom: 60px;
+    margin-top: 4px;
 }
 .why-us, .testimonial {
   background-color: rgba(69,90,100,0.8);
   margin-bottom: 60px;
   margin-top: 60px;
-  padding: 40px 0;
+  padding: 59px 0;
+  padding-left: 42px;
   color: #fff;
   font-family: roboto;
   font-weight: 300;
+  height: 280px;
   a {
       color: #9ccc65;
   }
@@ -215,38 +234,44 @@ img {
 }
 .why-us-list {
     line-height: 35px;
+    margin-left: 18px;
+    padding-top: 10px;
     li {
         list-style: initial;
         font-size: 20px;
     }
 }
 .testimonial-content, .why-us-content  {
-    padding-left: 10px;
+    padding-left: 48px;
+    margin-top: -6px;
 }
 .testimonial-content {
     padding-right: 7%;
+    padding-left: 69px;
     &::before, &::after{
         content: '';
         position: absolute;
         display: block;
-        height: 55px;
-        width: 46px;
+        height: 60px;
+        width: 65px;
         background-repeat: no-repeat;
-        background-size: 45px;
+        background-size: 65px;
     }
     &::before {
         background-image: url(../images/quoteiconLeft.png);
         top: 4px;
-        left: -60px;
+        left: -35px;
     }
     &::after {
         background-image: url(../images/quoteIconbottom.png);
-        bottom: 0px;
-        right: 20px;
+        bottom: 16px;
+        right: 40px;
     }
 }
 .testinomy {
-  line-height: 30px;
+    font-size: 22px;
+    line-height: 40px;
+    margin-top: -5px;
 }
 .why-us-img, .testimonial-img {
     padding-right: 15px;
@@ -257,6 +282,9 @@ img {
 }
 .testinomy-author {
     text-align: right;
+    padding-right: 73px;
+    padding-top: 35px;
+    font-size: 18px;
 }
 .company-logo-text {
   font-family: Avant Garde;
@@ -326,7 +354,7 @@ img {
 .plan-description {
   background-color: #fff;
   display: block;
-  min-height: 230px;
+  min-height: 250px;
   padding: 10px;
   position: relative;
   padding-bottom: 40px;
@@ -361,7 +389,7 @@ img {
     }
 }
 .float-on-mobile {
-     min-height: 250px;
+    //  min-height: 250px;
 }
 .right-arrow , .left-arrow {
     &::before, &::after {
@@ -412,8 +440,8 @@ img {
   left: 50%;
   text-align: center;
   padding: 8px 0;
-  width: 60%;
-  margin-left: calc(-30%);
+  width: 48%;
+  margin-left: -62px;
   background-color: #689f38;
   color: #fff;
   font-family: 'Roboto', sans-serif;
@@ -438,10 +466,10 @@ img {
     h1 {
         font-weight: 700;
         font-style: italic;
-        font-size: 20px;
+        font-size: 22px;
     }
     span {
-        font-size: 16px;
+        font-size: 14px;
         line-height: 25px;
     }
     img {
@@ -449,7 +477,7 @@ img {
     }
 }
 .suggested-plans-heading {
-    padding: 21px 10px;
+    padding: 18px 10px;
     background-color: #689F38;
     color: #fff;
     font-family: 'Roboto', sans-serif;
@@ -473,7 +501,7 @@ img {
     display: none;
 }
 .suggested-plans-full-image {
-      height: 530px;
+      height: 500px;
 }
 .suggested-view-button {
     display: block;
@@ -491,6 +519,13 @@ img {
     margin-bottom: 17px;
     left: 50%;
     margin-left: -50px;
+}
+.testimonial {
+    padding: 57px 0;
+    padding-left: 39px;
+}
+.testimonial-img img {
+      width: 173px;
 }
 /* Suggestion CSS End */
 .find-destination {
