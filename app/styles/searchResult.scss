@@ -1,71 +1,71 @@
-body {
+#searchResult {
     background-image: url('../images/backgroundImage-2.jpg');
-}
-.plan-vacation-form {
-    .city {
-        width: 58%;
-        margin-right: 6px;
-        margin-left: 5px;
-    }
-    .date {
-        width: 30%;
-        float: none;
-    }
-    input {
-        padding: 7px;
-
-    }
-    div {
-          padding: 0;
-    }
-    > div {
-          text-align: center;
-    }
-    .search {
-        position: relative;
-        right: 5%;
-    }
-    .minus-city {
-        background: url("/images/minus.png") 0px 0px no-repeat;
-        line-height: 28px;
-        right: -62px;
-    }
-}
-
-
-.repeat-section {
-  position: relative;
-}
-
-
-@media (max-width: 767px) {
     .plan-vacation-form {
+        .city {
+            width: 58%;
+            margin-right: 6px;
+            margin-left: 5px;
+        }
+        .date {
+            width: 30%;
+            float: none;
+        }
+        input {
+            padding: 7px;
+
+        }
         div {
-            padding: 0;
+              padding: 0;
+        }
+        > div {
+              text-align: center;
         }
         .search {
-            right: 9%;
-        }
-        .city {
-            width: 48%;
+            position: relative;
+            right: 5%;
         }
         .minus-city {
-            padding: 0;
-            width: 29px;
-            height: 29px;
-            right: 6px;
+            background: url("/images/minus.png") 0px 0px no-repeat;
+            line-height: 28px;
+            right: -62px;
+        }
+    }
+    .repeat-section {
+      position: relative;
+    }
+}
+@media (max-width: 767px) {
+    #searchResult {
+        .plan-vacation-form {
+            div {
+                padding: 0;
+            }
+            .search {
+                right: 9%;
+            }
+            .city {
+                width: 48%;
+            }
+            .minus-city {
+                padding: 0;
+                width: 29px;
+                height: 29px;
+                right: 6px;
+            }
         }
     }
 }
 
 
 @media (max-width: 991px) {
-    .plan-vacation-form {
-        .minus-city {
-            padding: 0;
-            width: 29px;
-            height: 29px;
-            right: 6px;
+    #searchResult {
+        .plan-vacation-form {
+            .minus-city {
+                padding: 0;
+                width: 29px;
+                height: 29px;
+                right: 6px;
+            }
         }
     }
 }

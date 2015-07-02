@@ -8,31 +8,16 @@
   padding: 0.2em 0;
 }
 
-body {
+#home {
   padding: 0;
-  // background-image: url('../images/backgroundImage.png');
+  background-image: url('../images/backgroundImage.png');
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
 .marketing,
 .footer {
   padding-left: 15px;
   padding-right: 15px;
-}
-
-/* Custom page header */
-.header {
-  border-bottom: 1px solid #e5e5e5;
-  margin-bottom: 10px;
-
-  /* Make the masthead heading the same height as the navigation */
-  h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 40px;
-    padding-bottom: 19px;
-  }
 }
 
 .container-narrow > hr {
@@ -93,104 +78,6 @@ img {
     clear: both;
 }
 
-// slider css
-
-.jcarousel-wrapper {
-  position: relative;
-}
-/** Carousel **/
-
-.jcarousel {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-}
-.jcarousel-wrapper a {
-    text-decoration: none;
-}
-.jcarousel ul {
-  width: 20000em;
-  position: relative;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.jcarousel li {
-  width: 200px;
-  float: left;
-  border: 1px solid #fff;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-.jcarousel img {
-  display: block;
-  max-width: 100%;
-  height: 230px;
-}
-/** Carousel Controls **/
-
-.jcarousel-control-prev, .jcarousel-control-next {
-  position: absolute;
-  top: 50%;
-  margin-top: -15px;
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  background: #4E443C;
-  color: #fff;
-  text-decoration: none;
-  text-shadow: 0 0 1px #000;
-  font: 24px/27px Arial, sans-serif;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  border-radius: 30px;
-  -webkit-box-shadow: 0 0 4px #F0EFE7;
-  -moz-box-shadow: 0 0 4px #F0EFE7;
-  box-shadow: 0 0 4px #F0EFE7;
-}
-.jcarousel-control-prev {
-  left: 15px;
-}
-.jcarousel-control-next {
-  right: 15px;
-}
-/** Carousel Pagination **/
-
-.jcarousel-pagination {
-  position: absolute;
-  bottom: -40px;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0);
-  -ms-transform: translate(-50%, 0);
-  transform: translate(-50%, 0);
-  margin: 0;
-}
-.jcarousel-pagination a {
-  text-decoration: none;
-  display: inline-block;
-  font-size: 11px;
-  height: 10px;
-  width: 10px;
-  line-height: 10px;
-  background: #fff;
-  color: #4E443C;
-  border-radius: 10px;
-  text-indent: -9999px;
-  margin-right: 7px;
-  -webkit-box-shadow: 0 0 2px #4E443C;
-  -moz-box-shadow: 0 0 2px #4E443C;
-  box-shadow: 0 0 2px #4E443C;
-}
-.jcarousel-pagination a.active {
-  background: #4E443C;
-  color: #fff;
-  opacity: 1;
-  -webkit-box-shadow: 0 0 2px #F0EFE7;
-  -moz-box-shadow: 0 0 2px #F0EFE7;
-  box-shadow: 0 0 2px #F0EFE7;
-}
-
 // home page styling
 .no-padding {
   padding: 0;
@@ -198,36 +85,6 @@ img {
 .no-margin {
   margin: 0;
 }
-/* Header CSS Start */
-.header {
-    padding: 0;
-    border: 0;
-
-    .navbar-default {
-        background: #689f38;
-        border: 0;
-        border-radius: 0;
-        min-height: 60px;
-        z-index: 1;
-    }
-
-    .navbar-nav {
-        float: right;
-        font-family: 'Roboto', sans-serif;
-        font-size: 18px;
-        font-weight: 300;
-    }
-
-    .navbar-default .navbar-nav > li > a {
-        padding: 19px 18px;
-    }
-    .navbar-default .navbar-nav > li > a,
-    .navbar-default .navbar-nav > li > a:hover,
-    .navbar-default .navbar-nav > li > a:focus {
-        color: #fff;
-    }
-}
-/* Header CSS End */
 
 /* Plan Your Vacation CSS Start */
 .banner-section {
@@ -639,140 +496,6 @@ img {
 .find-destination {
     padding-bottom: 60px;
 }
-
-/* Footer CSS Start */
-.footer {
-    background: rgba(0,0,0, .87);
-    font-family: 'Roboto', sans-serif;
-    font-weight: 100;
-    color: #fff;
-    padding: 50px 0px 200px;
-
-    h2 {
-        font-weight: 100;
-    }
-}
-
-.signup-section {
-    text-align: center;
-
-    h2 {
-        font-size: 24px;
-        margin-top: 0;
-    }
-}
-
-.signup-heading {
-    margin-bottom: 56px;
-}
-
-.newsletter-form {
-    padding-bottom: 56px;
-
-    input,
-    button {
-        font-family: 'Roboto', sans-serif;
-        font-size: 18px;
-        font-weight: 100;
-        border-radius: 0;
-        border: 0;
-        height: 40px;
-        text-align: center;
-    }
-
-    input {
-        color: #010000;
-    }
-
-    ::-webkit-input-placeholder {
-        color: #010000;
-    }
-
-    button {
-        width: 140px;
-    }
-
-    button,
-    button:hover,
-    button:active,
-    button:active.focus {
-        background: #689f38;
-        color: #fff;
-    }
-}
-.social-header {
-    margin-bottom: 25px;
-}
-
-.social-media {
-    display: inline-block;
-    padding: 0 0 62px;
-
-    li {
-        float: left;
-    }
-
-    a {
-        display: block;
-        width: 100px;
-        height: 100px;
-    }
-
-    .facebook {
-        background: #3b5998 url("/images/fbIocn.png") center center no-repeat;
-    }
-
-    .g-plus {
-        background: #dd4b39 url("/images/googlePlusIcon.png") center center no-repeat;
-    }
-
-    .twitter {
-        background: #55acee url("/images/twitterIcon.png") center center no-repeat;
-    }
-
-    .you-tube {
-        background: #e52d27 url("/images/youtubeIcon.png") center center no-repeat;
-    }
-}
-.footer-nav {
-    border-top: 1px #929292 solid;
-    padding-bottom: 60px;
-}
-
-.footer-links {
-    border-bottom: 1px #929292 solid;
-    padding: 35px 0 22px;
-
-    .link-section {
-        padding-left: 50px;
-    }
-
-    h2 {
-        font-size: 30px;
-        text-align: right;
-        margin: 0;
-        padding-right: 70px;
-    }
-
-    ul {
-        padding: 0;
-    }
-
-    a {
-        line-height: 30px;
-        display: block;
-        color: #fff;
-    }
-
-    a:hover {
-        color: #fff;
-        text-decoration: none;
-    }
-}
-.copy-right {
-    text-align: center;
-}
-/* Footer CSS End */
 @media (min-width: 1200px) {
   .container {
     width: 1000px;

@@ -14,13 +14,14 @@
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/components.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/mobile.css">
     <link rel="stylesheet" href="styles/searchResult.css">
     <!-- <link rel="stylesheet" href="styles/main.css"> -->
     <!-- endbuild -->
   </head>
-  <body ng-app="yeomanProject" ng-class="{{routeClassName}}" ng-controller="mainController">
+  <body ng-app="yeomanProject" id="{{routeClassName}}" ng-controller="mainController">
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
