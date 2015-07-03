@@ -30,6 +30,11 @@
         <div ng-view=""></div>
     </div>
     <div ng-include="'views/components/footer.html'"></div>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#signupModal">
+          Open SignUp
+        </button>
+        <div ng-include="'/modalTemplate/modalLoginSignup.html'"></div>
 
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
