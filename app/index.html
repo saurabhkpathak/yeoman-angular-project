@@ -26,6 +26,11 @@
 
     <!-- Add your site or application content here -->
         <div ng-view=""></div>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+          Launch demo modal
+        </button>
+        <div ng-include="'/modalTemplate/modalLoginSignup.html'"></div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>

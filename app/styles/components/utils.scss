@@ -1,0 +1,91 @@
+.modal-content {
+  border-radius: 0px;
+  background: #eceff1;
+  padding-top: 40px;
+}
+.c-modal-heading {
+  font-size: 36px;
+  color: #455a64;
+  font-weight: 400;
+  line-height: 1;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  top: -3px;
+  margin-bottom: 23px;
+}
+.c-close-modal {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  right: 31px;
+  top: 20px;
+  z-index: 1;
+  opacity: 1;
+  outline: none;
+  span {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: url("/images/cross-modal.png") center center no-repeat;
+  }
+  &:hover {
+    opacity: 1;
+  }
+}
+.c-modalText  {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  color: #263238;
+  height: 36px;
+  margin-bottom: 16px;
+  padding-left: 10px;
+}
+.c-green-link, .c-green-link:hover, .c-green-link:active {
+  color: #689f38;
+  font-size: 14px;
+  text-decoration: underline;
+}
+.c-button {
+  width: 48.2%;
+  outline: none;
+  background: none;
+  border: none;
+  color: #455a64;
+  text-align: left;
+  font-size: 14px;
+  background: #cfd8dc;
+  height: 36px;
+  padding-left: 10px;
+
+}
+.c-fleft {
+  float: left;
+}
+.c-fright {
+  float: right;
+}
+.c-submit-button {
+  background: #689f38;
+  color: #fff;
+}
+.c-continue {
+  text-align: center;
+}
+.modal-footer {
+  border-top: none;
+}
+.c-signUp-block{
+  border-left: 1px solid #cfd8dc;
+}
+.padding-lr-20 {
+  padding: 0px 20px;
+}
+.forgot-link {
+  text-align: right;
+  margin-top: 19px;
+}
