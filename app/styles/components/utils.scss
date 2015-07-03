@@ -90,3 +90,26 @@
   text-align: right;
   margin-top: 19px;
 }
+input[type="email"] {
+  background: #fff url("/images/email-icon.png") no-repeat;
+  background-position: 97%;
+  background-position: center right 10px;
+}
+input[type="password"] {
+  background: #fff url("/images/pwd-icon.png") no-repeat;
+  background-position: 97%;
+  background-position: center right 10px;
+}
+
+input[type="submit"] {
+  background-image: url("/images/submit.png");
+  background-repeat: no-repeat;
+  background-position: 97%;
+  background-position: center right 10px;
+}
+input[type="reset"] {
+  background-image: url("/images/cancel-icon.png");
+  background-repeat: no-repeat;
+  background-position: 97%;
+  background-position: center right 10px;
+}
