@@ -1,0 +1,36 @@
+#itinerary {
+    background-image: url('../images/eiffelTower.jpg');
+}
+.book-vacation-wrapper {
+    height: 36px;
+    margin-bottom: 20px;
+    > div {
+          float: right;
+          height: 100%;
+          padding: 8px 0 0 40px;
+          background-position: 16px;
+    }
+}
+.vacation-destination-wrapper {
+    background-color: #cfd8d7;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.upper-image {
+      margin-bottom: 15px;
+}
+.contact-agent {
+    width: 190px;
+    background-image: url(../images/chatIcon.png);
+    background-color: #eceff1;
+    color: #455a64;
+    background-repeat: no-repeat;
+}
+.book-vacation {
+    width: 150px;
+    background-image: url(../images/worldIcon.png);
+    background-color: #689f38;
+    color: #fff;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+}

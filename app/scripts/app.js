@@ -44,6 +44,11 @@ angular
         controller: 'HomeCtrl',
         className: 'searchResult'
       })
+      .when('/itinerary', {
+        templateUrl: 'views/itinerary.html',
+        controller: 'HomeCtrl',
+        className: 'itinerary'
+      })
       .otherwise({
         redirectTo: '/'
       });
