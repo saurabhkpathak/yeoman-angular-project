@@ -11,10 +11,88 @@
           background-position: 16px;
     }
 }
-.vacation-destination-wrapper {
-    background-color: #cfd8d7;
+// Navigation css START
+.nav-tabs {
+    background-color: #E9EEF0;
+    border-bottom: 4px solid #51A848 !important;
+    a {
+        color: #fff;
+        margin: 0 !important;
+    }
+}
+[role="presentation"] {
+    background-color: #16702C !important;
+    a:hover {
+        background-color: #16702C !important;
+        border: 1px solid #16702C !important;
+        color: #fff !important;
+        border-radius: 0 !important;
+    }
+}
+[role="presentation"].active {
+    background-color: #51A848;
+    a {
+        background-color: #51A848 !important;
+        border: 1px solid #51A848 !important;
+        color: #fff !important;
+        border-radius: 0 !important;
+    }
+}
+// Navigation css END
+.destination-name {
+    padding: 15px 0;
+    padding-left: 15px;
+    background-color: #CCD7DC;
+}
+.tour-date {
     padding-top: 15px;
     padding-bottom: 15px;
+    color: #51A848;
+}
+.site-description-wrapper  {
+    border-top: 1px solid #CED8DA;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        display: block;
+        border-style: solid;
+        border-width: 12px 15px 12px 0;
+        border-color: rgba(255, 0, 0, 0) #EAEFF1 rgba(0, 0, 255, 0);
+        height: 0;
+        left: -15px;
+        top: 34px;
+    }
+}
+.site-name-wrapper, .site-description {
+    padding-top: 10px;
+}
+.site-name {
+    color: #51A848;
+}
+.vacation-destination-wrapper {
+    padding-right: 0;
+}
+.vacation-itinary-wrapper {
+    padding-left: 0;
+}
+.destination-images {
+    background-color: #cfd8d7;
+    padding: 15px;
+}
+.list-wrapper {
+    background-color: #EAEFF1;
+}
+.site-time {
+    float: left;
+    font-weight: bold;
+}
+.remove-site {
+    float: right;
+    background-image: url(../images/cancel-icon.png);
+    height: 16px;
+    background-repeat: no-repeat;
+    background-position: right;
 }
 .upper-image {
       margin-bottom: 15px;

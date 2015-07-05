@@ -3,14 +3,18 @@
         <img src="images/complany-logo.png" />
     </div>
     <div class="col-xs-7 col-md-8 no-padding vacation-heading">
-        <span class="vacation-heading--plan" >Plan Your</span><span class="vacation-heading--vacation" >Vacation</span>
+        <span class="vacation-heading--plan" >Plan Your</span>
+        <span class="vacation-heading--vacation" >Vacation</span>
     </div>
 </div>
+
 <div class="row book-vacation-wrapper">
     <div class="book-vacation col-xs-12">Book Vacation</div>
     <div class="contact-agent col-xs-12">Contact Travel Agent</div>
 </div>
+
 <div class="row">
+    <!-- Right column START -->
     <div class="vacation-destination-wrapper col-md-5 col-xs-12 pull-right">
         <div class="destination-images hidden-xs">
             <div class="upper-image clearfix"><img src="images/picture_1.png"></div>
@@ -21,8 +25,8 @@
             </div>
         </div>
         <div class="places">
-            <div class="places">Destination</div>
-            <div class="places">Add Destination</div>
+            <div class="destination-banner">Destination</div>
+            <div class="add-destination">Add Destination</div>
             <div class="clearfix">
                 <div class="col-md-4"><img src="images/destinationImage_2.png"></div>
                 <div class="col-md-6">Paris France</div>
@@ -33,24 +37,71 @@
         </div>
 
 
-        <div>
+        <div class="vacation-tabs">
             <!-- Nav tabs -->
             <ul id="myTabs" class="nav nav-tabs" role="tablist">
-                <li role="presentation" class="active"><a data-href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
-                <li role="presentation"><a data-href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+                <li role="presentation" class="active"><a data-href="#attraction" aria-controls="attraction" role="tab" data-toggle="tab">Attractions</a></li>
+                <li role="presentation"><a data-href="#tours" aria-controls="tours" role="tab" data-toggle="tab">Tours</a></li>
             </ul>
 
             <!-- Tab panes -->
             <div class="tab-content">
-                <div role="tabpanel" class="tab-pane active" id="home">.fdgsdfgsdf..</div>
-                <div role="tabpanel" class="tab-pane" id="profile">.ghfghfgh..</div>
+                <div role="tabpanel" class="tab-pane active" id="attraction">.fdgsdfgsdf..</div>
+                <div role="tabpanel" class="tab-pane" id="tours">.ghfghfgh..</div>
             </div>
         </div>
 
-
-
     </div>
+    <!-- Right column  END -->
+    <!-- Left column START -->
     <div class="vacation-itinary-wrapper col-md-7 col-xs-12 pull-left">
-        <div class=""></div>
+        <div class="row vacation-itinary-banner">Vacation Itinary</div>
+        <div class="row itinary-tabs">
+            <!-- Nav tabs -->
+            <ul id="myTabs" class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a data-href="#list" aria-controls="list" role="tab" data-toggle="tab">List</a></li>
+                <li role="presentation"><a data-href="#calendar" aria-controls="calendar" role="tab" data-toggle="tab">Calendar</a></li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="list">
+                    <div class="destination-name">Paris, France</div>
+                    <div class="list-wrapper clearfix">
+                        <div class="tour-date col-md-12 col-xs-12 clearfix">
+                            <div class="col-md-10 col-xs-10 no-padding">Saturday, March7</div>
+                            <select class="col-md-2 col-xs-2 no-padding">
+                                <option>Day 1</option>
+                                <option>Day 2</option>
+                                <option>Day 3</option>
+                            </select>
+                        </div>
+                        <!-- list START-->
+                        <div class="col-md-12">
+                            <img class="col-md-2 col-xs-2  site-image no-padding" src="images/Picture-2.png">
+                            <div class="col-md-10 col-xs-10 site-description-wrapper no-padding">
+                                <div class="site-name-wrapper clearfix">
+                                    <span class="col-md-3  col-xs-3 site-time">10:00 Am</span>
+                                    <span class="col-md-7  col-xs-7 site-name">Eiffel Tower</span>
+                                    <span class="col-md-2  col-xs-2 remove-site"></span>
+                                </div>
+                                <div class="site-description clearfix">
+                                    <span class="col-md-3  col-xs-3 site-duration">(3 hours)</span>
+                                    <span class="col-md-7  col-xs-7">
+                                        Lorem ipsum dolor sit amet, duo brute nusquam in.
+                                        Eos ei animal expetenda, cu detracto lobortis vel.
+                                        Lorem ipsum.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- list END-->
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="calendar"></div>
+            </div>
+        </div>
+        <div class="row save-banner">Save</div>
     </div>
+    <!-- Left column END -->
 </div>
