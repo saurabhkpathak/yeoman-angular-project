@@ -20,6 +20,10 @@
         margin: 0 !important;
     }
 }
+.vacation-tabs .nav-tabs {
+    padding-top: 20px;
+    background-color: rgba(69, 88, 97, 0.8);
+}
 [role="presentation"] {
     background-color: #16702C !important;
     a:hover {
@@ -37,6 +41,35 @@
         color: #fff !important;
         border-radius: 0 !important;
     }
+}
+.add-destination {
+    text-align: right;
+    background-color: #EAEFF1;
+    padding: 5px 15px;
+}
+.add-places-wrapper {
+    background-color: #CCD7DC;
+}
+.place-desc-wrapper {
+    position: relative;
+    > div {
+        padding-top: 10px;
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        display: block;
+        border-style: solid;
+        border-width: 12px 15px 12px 0;
+        border-color: rgba(255, 0, 0, 0) #EAEFF1 rgba(0, 0, 255, 0);
+        height: 0;
+        left: -15px;
+        top: 38px;
+    }
+}
+.places-to-be-added {
+    background-color: #EAEFF1;
+    margin: 15px 0;
 }
 // Navigation css END
 .destination-name {
@@ -87,7 +120,7 @@
     float: left;
     font-weight: bold;
 }
-.remove-site {
+.remove-site, .edit-place {
     float: right;
     background-image: url(../images/cancel-icon.png);
     height: 16px;
