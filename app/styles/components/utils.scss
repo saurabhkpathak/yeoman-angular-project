@@ -2,11 +2,12 @@
   border-radius: 0px;
   background: #eceff1;
   padding-top: 40px;
+  padding-bottom: 48px;
 }
 .c-modal-heading {
   font-size: 36px;
   color: #455a64;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1;
   margin: 0px;
   padding: 0px;
@@ -78,7 +79,7 @@
 }
 .modal-footer {
   border-top: none;
-  padding: 48px 0px;
+  padding: 48px 0px 0px;
 }
 .c-signUp-block{
   border-left: 1px solid #cfd8dc;
@@ -97,6 +98,27 @@ input[type="email"] {
 }
 input[type="password"] {
   background: #fff url("/images/pwd-icon.png") no-repeat;
+  background-position: 97%;
+  background-position: center right 10px;
+}
+
+.c-textarea {
+  height: 100px;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 7px 10px;
+  resize: none;
+  margin-bottom: 10px;
+}
+
+.c-user {
+  background: #fff url("/images/user-icon.png") no-repeat;
+  background-position: 97%;
+  background-position: center right 10px;
+}
+.c-call {
+  background: #fff url("/images/call-icon.png") no-repeat;
   background-position: 97%;
   background-position: center right 10px;
 }

@@ -1,0 +1,33 @@
+@media (min-width: 768px) {
+  .c-contact-agent .modal-dialog {
+    width: 480px;
+    margin: 30px auto;
+  }
+}
+
+.c-contact-agent {
+  .c-twoBlock {
+    input {
+      width: 49%;
+    }
+    input[type="email"] {
+      float: left;
+    }
+    .c-call {
+      float: right;
+    }
+  }
+  .c-bottom-links {
+    clear: both;
+    text-align: right;
+    padding-right: 30px;
+    padding-top: 19px;
+  }
+  .c-button {
+    width: 49%;
+  }
+  .link-seperator {
+    margin: 0px 7px;
+    text-decoration: none;
+  }
+}
