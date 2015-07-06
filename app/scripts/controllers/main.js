@@ -12,7 +12,6 @@ angular.module('yeomanProject')
     // Load the itinerary list
     $http.get('http://localhost:9000/scripts/itinerary.json').success(function(data) {
       $scope.stagesItenary = data.itinerary;
-      console.log($scope.stagesItenary);
     });
     // var newDay = {
     //

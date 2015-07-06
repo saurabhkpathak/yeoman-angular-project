@@ -12,6 +12,5 @@ angular.module('yeomanProject')
     // Load the itinerary list
     $http.get('http://localhost:9000/scripts/sliderData.json').success(function(data) {
       $scope.carouselData = data;
-      console.log($scope.carouselData);
     });
   }]);
