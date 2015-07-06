@@ -28,11 +28,28 @@
             background: url("/images/minus.png") 0px 0px no-repeat;
             line-height: 28px;
             right: -62px;
+            width: 30px;
+        }
+        .add-city {
+            width: 30px;
         }
     }
     .repeat-section {
       position: relative;
     }
+}
+.matching-results {
+    padding: 15px;
+    background-color: #5E9D48;
+}
+.matching-results-wrapper img {
+    height: 55px;
+}
+.matching-results-wrapper:nth-child(odd) {
+    background-color: #E9EFF1;
+}
+.matching-results-wrapper:nth-child(even) {
+    background-color: #FFFFFF;
 }
 @media (max-width: 767px) {
     #searchResult {
