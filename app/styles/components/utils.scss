@@ -129,9 +129,26 @@ input[type="submit"] {
   background-position: 97%;
   background-position: center right 10px;
 }
+.c-add-more {
+  background-image: url("/images/add-more.png");
+  background-repeat: no-repeat;
+  background-position: 97%;
+  background-position: center right 10px;
+}
 input[type="reset"] {
   background-image: url("/images/cancel-icon.png");
   background-repeat: no-repeat;
   background-position: 97%;
   background-position: center right 10px;
+}
+.c-select-box {
+  height: 36px;
+  border: none;
+  width: 100%;
+  outline: none;
+  margin-bottom: 15px;
+  text-indent: 6px;
+  appearance: none;
+  -webkit-appearance: none;
+  background: #fff url("/images/drop-down-arrow.png") no-repeat right;
 }
