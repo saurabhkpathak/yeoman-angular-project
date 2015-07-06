@@ -1,0 +1,19 @@
+@media (min-width: 768px) {
+  .c-login .modal-dialog {
+    width: 480px;
+    margin: 30px auto;
+  }
+}
+
+.c-login {
+  .c-bottom-links {
+    clear: both;
+    text-align: right;
+    padding-right: 30px;
+    padding-top: 19px;
+  }
+  .link-seperator {
+    margin: 0px 7px;
+    text-decoration: none;
+  }
+}
