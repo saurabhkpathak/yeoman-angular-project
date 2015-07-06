@@ -42,6 +42,26 @@
         border-radius: 0 !important;
     }
 }
+.vacation-search {
+    padding: 15px 0px;
+    background-color: #CCD7DB;
+    input {
+        margin: 0 auto;
+        display: block;
+        width: 91%;
+        height: 35px;
+        padding: 10px;
+        border: 0;
+    }
+}
+.panel-group .panel, .panel-body {
+    border: 0 !important;
+    border-radius: 0 !important;
+    background-color: #EBEFF0 !important;
+}
+.panel-default > .panel-heading {
+    background-color: #EBEFF0 !important;
+}
 .add-destination {
     text-align: right;
     background-color: #EAEFF1;
@@ -70,6 +90,46 @@
 .places-to-be-added {
     background-color: #EAEFF1;
     margin: 15px 0;
+}
+.vacation-accordian-wrapper.expanded {
+    background-color: #EAEFF1;
+    height: 95px;
+    img {
+        height: 95px;
+    }
+    .accordian-header {
+        &::before {
+            border-width: 17px 19px 20px 0;
+            border-color: rgba(255, 0, 0, 0) #EAEFF1 rgba(0, 0, 255, 0);
+            left: -33px;
+            top: 26px;
+        }
+    }
+}
+.accordian-header {
+    &::before {
+        content: '';
+        position: absolute;
+        display: block;
+        border-style: solid;
+        border-width: 10px 12px 10px 0;
+        border-color: rgba(255, 0, 0, 0) #5F9D47 rgba(0, 0, 255, 0);
+        height: 0;
+        left: -27px;
+        top: 14px;
+    }
+}
+.vacation-accordian-wrapper {
+    margin: 15px 0;
+    height: 50px;
+    overflow: hidden;
+    background-color: #5F9D47;
+    img {
+        height: 50px;
+    }
+    .accordian-header {
+        height: 50px;
+    }
 }
 // Navigation css END
 .destination-name {
@@ -122,10 +182,13 @@
 }
 .remove-site, .edit-place {
     float: right;
-    background-image: url(../images/cancel-icon.png);
+    background-image: url(../images/closeBtnGreen.png);
     height: 16px;
     background-repeat: no-repeat;
     background-position: right;
+}
+.edit-place {
+    background-image: url(../images/editBtnGreen.png);
 }
 .upper-image {
       margin-bottom: 15px;
