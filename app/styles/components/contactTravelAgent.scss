@@ -1,11 +1,22 @@
 @media (min-width: 768px) {
-  .c-login .modal-dialog {
+  .c-contact-agent .modal-dialog {
     width: 480px;
     margin: 30px auto;
   }
 }
 
-.c-login {
+.c-contact-agent {
+  .c-twoBlock {
+    input {
+      width: 49%;
+    }
+    input[type="email"] {
+      float: left;
+    }
+    .c-call {
+      float: right;
+    }
+  }
   .c-bottom-links {
     clear: both;
     text-align: right;
