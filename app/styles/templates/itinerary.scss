@@ -11,6 +11,31 @@
           background-position: 16px;
     }
 }
+.accordion-toggle:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.tour-day {
+    background-color: #cfd8dc;
+    padding-left: 14px;
+    font-size: 14px;
+    color: #455a64;
+    font-weight: bold;
+    font-style: normal;
+    height: 36px;
+    width: 80px;
+    line-height: 36px;
+    background-image: url(../images/dropdown-Arrowgreen.png);
+    background-repeat: no-repeat;
+    background-size: 14px 10px;
+    background-position: right;
+    border-right: 10px solid transparent;
+    font-family: roboto;
+}
+.panel-group {
+    margin-bottom: 0 !important;
+}
 // Navigation css START
 .nav-tabs {
     background-color: #E9EEF0;
@@ -155,13 +180,18 @@
     font-style: italic;
     font-family: roboto condensed;
 }
-.tour-date {
-    padding-top: 15px;
-    padding-bottom: 15px;
+.panel-body, .panel-heading {
+    padding: 0px !important;
+}
+.tour-date-wrapper {
+    padding: 12px 3px 10px 15px;
     color: #689f38;
     font-size: 18px;
     font-style: italic;
     font-family: roboto condensed;
+}
+.tour-date {
+    margin-top: 10px;
 }
 .site-description-wrapper  {
     border-top: 1px solid #CED8DA;

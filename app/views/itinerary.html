@@ -58,7 +58,16 @@
                 <tab-heading class="vacation-tabs-attractions">Attractions</tab-heading>
                 <div class="tab-content">
                     <div class="vacation-search"><input type="text" placeholder="Search..."></div>
-                    DDDDDDDDDDDDDDDDDDDDDDDDD
+                    <div class="vacation-tab-accordion">
+                      <accordion close-others="true">
+                        <accordion-group is-open="true" >
+                          <accordion-heading>
+                            I can have markup, too! <i class="pull-right glyphicon"></i>
+                          </accordion-heading>
+                          This is just some content to illustrate fancy headings.
+                        </accordion-group>
+                      </accordion>
+                    </div>
                 </div>
             </tab>
             <tab>
@@ -81,56 +90,118 @@
                 <tab-heading class="itinary-tabs-list">List</tab-heading>
                 <div class="tab-content">
                     <div class="destination-name">Paris, France</div>
-                    <div class="list-wrapper clearfix">
-                        <div class="tour-date col-md-12 col-xs-12 clearfix">
-                            <div class="col-md-10 col-xs-10 no-padding">Saturday, March7</div>
-                            <select class="col-md-2 col-xs-2 no-padding">
-                                <option>Day 1</option>
-                                <option>Day 2</option>
-                                <option>Day 3</option>
-                            </select>
-                        </div>
-                        <!-- list START-->
-                        <div class="col-md-12">
-                            <img class="col-md-2 col-xs-2  site-image no-padding" src="images/Picture-2.png">
-                            <div class="col-md-10 col-xs-10 site-description-wrapper directing-arrow-left no-padding">
-                                <div class="site-name-wrapper clearfix">
-                                    <span class="col-md-3  col-xs-3 site-time">10:00 Am</span>
-                                    <span class="col-md-7  col-xs-7 site-name">Eiffel Tower</span>
-                                    <a class="col-md-2  col-xs-2 remove-site"></a>
-                                </div>
-                                <div class="site-description clearfix">
-                                    <span class="col-md-3  col-xs-3 site-duration">(3 hours)</span>
-                                    <span class="col-md-7  col-xs-7">
-                                        Lorem ipsum dolor sit amet, duo brute nusquam in.
-                                        Eos ei animal expetenda, cu detracto lobortis vel.
-                                        Lorem ipsum.
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- list END-->
-                        <!-- list START-->
-                        <div class="col-md-12">
-                            <img class="col-md-2 col-xs-2  site-image no-padding" src="images/Picture-2.png">
-                            <div class="col-md-10 col-xs-10 site-description-wrapper directing-arrow-left no-padding">
-                                <div class="site-name-wrapper clearfix">
-                                    <span class="col-md-3  col-xs-3 site-time">10:00 Am</span>
-                                    <span class="col-md-7  col-xs-7 site-name">Eiffel Tower</span>
-                                    <a class="col-md-2  col-xs-2 remove-site"></a>
-                                </div>
-                                <div class="site-description clearfix">
-                                    <span class="col-md-3  col-xs-3 site-duration">(3 hours)</span>
-                                    <span class="col-md-7  col-xs-7">
-                                        Lorem ipsum dolor sit amet, duo brute nusquam in.
-                                        Eos ei animal expetenda, cu detracto lobortis vel.
-                                        Lorem ipsum.
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- list END-->
+                    <!-- Itinary List Accordion START -->
+                    <div class="itinary-tabs-list-accordion">
+                      <accordion close-others="true">
+                        <accordion-group is-open="true" >
+                          <accordion-heading class="clearfix">
+                              <div class="tour-date-wrapper col-md-12 col-xs-12 clearfix">
+                                  <div class="col-md-10 col-xs-10 tour-date no-padding">Saturday, March7</div>
+                                  <div class="col-md-2 col-xs-2 tour-day no-padding">Day1</div>
+                              </div>
+                          </accordion-heading>
+                          <div class="list-wrapper">
+                              <!-- list START-->
+                              <div class="col-md-12">
+                                  <img class="col-md-2 col-xs-2  site-image no-padding" src="images/Picture-2.png">
+                                  <div class="col-md-10 col-xs-10 site-description-wrapper directing-arrow-left no-padding">
+                                      <div class="site-name-wrapper clearfix">
+                                          <span class="col-md-3  col-xs-3 site-time">10:00 Am</span>
+                                          <span class="col-md-7  col-xs-7 site-name">Eiffel Tower</span>
+                                          <a class="col-md-2  col-xs-2 remove-site"></a>
+                                      </div>
+                                      <div class="site-description clearfix">
+                                          <span class="col-md-3  col-xs-3 site-duration">(3 hours)</span>
+                                          <span class="col-md-7  col-xs-7">
+                                              Lorem ipsum dolor sit amet, duo brute nusquam in.
+                                              Eos ei animal expetenda, cu detracto lobortis vel.
+                                              Lorem ipsum.
+                                          </span>
+                                      </div>
+                                  </div>
+                              </div>
+                              <!-- list END-->
+                              <!-- list START-->
+                              <div class="col-md-12">
+                                  <img class="col-md-2 col-xs-2  site-image no-padding" src="images/Picture-2.png">
+                                  <div class="col-md-10 col-xs-10 site-description-wrapper directing-arrow-left no-padding">
+                                      <div class="site-name-wrapper clearfix">
+                                          <span class="col-md-3  col-xs-3 site-time">10:00 Am</span>
+                                          <span class="col-md-7  col-xs-7 site-name">Eiffel Tower</span>
+                                          <a class="col-md-2  col-xs-2 remove-site"></a>
+                                      </div>
+                                      <div class="site-description clearfix">
+                                          <span class="col-md-3  col-xs-3 site-duration">(3 hours)</span>
+                                          <span class="col-md-7  col-xs-7">
+                                              Lorem ipsum dolor sit amet, duo brute nusquam in.
+                                              Eos ei animal expetenda, cu detracto lobortis vel.
+                                              Lorem ipsum.
+                                          </span>
+                                      </div>
+                                  </div>
+                              </div>
+                              <!-- list END-->
+                          </div>
+                        </accordion-group>
+                      </accordion>
                     </div>
+                    <!-- Itinary List Accordion END -->
+                    <!-- Itinary List Accordion START -->
+                    <div class="itinary-tabs-list-accordion">
+                      <accordion close-others="true">
+                        <accordion-group is-open="true" >
+                          <accordion-heading class="clearfix">
+                              <div class="tour-date-wrapper col-md-12 col-xs-12 clearfix">
+                                  <div class="col-md-10 col-xs-10 tour-date no-padding">Saturday, March7</div>
+                                  <div class="col-md-2 col-xs-2 tour-day no-padding">Day1</div>
+                              </div>
+                          </accordion-heading>
+                          <div class="list-wrapper">
+                              <!-- list START-->
+                              <div class="col-md-12">
+                                  <img class="col-md-2 col-xs-2  site-image no-padding" src="images/Picture-2.png">
+                                  <div class="col-md-10 col-xs-10 site-description-wrapper directing-arrow-left no-padding">
+                                      <div class="site-name-wrapper clearfix">
+                                          <span class="col-md-3  col-xs-3 site-time">10:00 Am</span>
+                                          <span class="col-md-7  col-xs-7 site-name">Eiffel Tower</span>
+                                          <a class="col-md-2  col-xs-2 remove-site"></a>
+                                      </div>
+                                      <div class="site-description clearfix">
+                                          <span class="col-md-3  col-xs-3 site-duration">(3 hours)</span>
+                                          <span class="col-md-7  col-xs-7">
+                                              Lorem ipsum dolor sit amet, duo brute nusquam in.
+                                              Eos ei animal expetenda, cu detracto lobortis vel.
+                                              Lorem ipsum.
+                                          </span>
+                                      </div>
+                                  </div>
+                              </div>
+                              <!-- list END-->
+                              <!-- list START-->
+                              <div class="col-md-12">
+                                  <img class="col-md-2 col-xs-2  site-image no-padding" src="images/Picture-2.png">
+                                  <div class="col-md-10 col-xs-10 site-description-wrapper directing-arrow-left no-padding">
+                                      <div class="site-name-wrapper clearfix">
+                                          <span class="col-md-3  col-xs-3 site-time">10:00 Am</span>
+                                          <span class="col-md-7  col-xs-7 site-name">Eiffel Tower</span>
+                                          <a class="col-md-2  col-xs-2 remove-site"></a>
+                                      </div>
+                                      <div class="site-description clearfix">
+                                          <span class="col-md-3  col-xs-3 site-duration">(3 hours)</span>
+                                          <span class="col-md-7  col-xs-7">
+                                              Lorem ipsum dolor sit amet, duo brute nusquam in.
+                                              Eos ei animal expetenda, cu detracto lobortis vel.
+                                              Lorem ipsum.
+                                          </span>
+                                      </div>
+                                  </div>
+                              </div>
+                              <!-- list END-->
+                          </div>
+                        </accordion-group>
+                      </accordion>
+                    </div>
+                    <!-- Itinary List Accordion END -->
                 </div>
             </tab>
             <tab>
