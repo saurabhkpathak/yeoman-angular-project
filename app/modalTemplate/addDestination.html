@@ -1,0 +1,53 @@
+<!-- Modal -->
+<div class="modal fade c-add-destination" id="add-destination" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <button type="button" class="close c-close-modal" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true"></span>
+      </button>
+      <div class="modal-body no-padding clearfix">
+        <div class="col-sm-12 c-login-block padding-lr-20">
+          <h1 class="c-modal-heading">Add Destination</h1>
+          <form>
+            <div class="c-popup-form clearfix">
+              <input type="text" placeholder="Enter a city or country" class="c-modalText c-location">
+              <div class="c-twoBlock clearfix">
+                <input
+                type="text"
+                placeholder="Start Date"
+                class="c-modalText c-calender"
+                custom-class="c-calender-popup"
+                datetime-picker="dd MMM yyyy"
+                ng-model="dates.date1"
+                is-open="open.date1"
+                enable-time="false"
+                close-on-date-selection="true"
+                datepicker-append-to-body="true"
+                ng-click="openCalendar($event, 'date1')"
+                />
+
+                <input
+                type="text"
+                placeholder="End Date"
+                class="c-modalText c-calender"
+                custom-class="c-calender-popup"
+                datetime-picker="dd MMM yyyy"
+                ng-model="dates.date2"
+                is-open="open.date2"
+                enable-time="false"
+                close-on-date-selection="true"
+                datepicker-append-to-body="true"
+                ng-click="openCalendar($event, 'date2')"
+                />
+              </div>
+              <div class="c-buttons clearfix">
+                <input type="reset" value="Cancel" class="c-button c-fleft c-cancel-button">
+                <button value="Submit" class="c-button c-fright c-submit-button c-add-more">Add Attraction</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
