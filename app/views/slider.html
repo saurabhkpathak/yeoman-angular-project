@@ -4,7 +4,7 @@
   <ul>
     <li ng-repeat="attraction in sliderContent.attractions track by $index">
       <img src="{{attraction.imageUrl}}" ng-if="$even">
-      <span class="plan-description">
+      <span class="plan-description" ng-class="$even ? 'directing-arrow-up' : 'directing-arrow-down'">
         <b class="col-md-12 no-padding planned-city">{{attraction.imageHeading}}</b>
         <span class="col-md-12 no-padding planned-city-description">{{attraction.details}}</span>
         <span class="col-md-12 no-padding plan-it-button">Plan It</span>
