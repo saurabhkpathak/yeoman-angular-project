@@ -42,8 +42,15 @@
     padding: 15px;
     background-color: #5E9D48;
 }
-.matching-results-wrapper img {
-    height: 55px;
+.matching-results-wrapper {
+    img, > div {
+        height: 60px;
+    }
+}
+.matching-results-wrapper:nth-child(even) {
+    .directing-arrow-left::before {
+        border-color: transparent #fff transparent;
+    }
 }
 .matching-results-wrapper:nth-child(odd) {
     background-color: #E9EFF1;

@@ -71,6 +71,7 @@
     background-color: #CCD7DC;
 }
 .place-desc-wrapper {
+    height: 100px;
     > div {
         padding-top: 10px;
     }
@@ -134,7 +135,7 @@
     border-top: 1px solid #CED8DA;
     position: relative;
     &::before {
-        top: 25%;
+        top: 42px;
     }
 }
 .site-name-wrapper, .site-description {
