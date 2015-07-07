@@ -45,6 +45,7 @@
   height: 36px;
   margin-bottom: 15px;
   padding-left: 10px;
+  padding-right: 30px;
 }
 .c-green-link, .c-green-link:hover, .c-green-link:active {
   color: #689f38;
@@ -117,6 +118,13 @@ input[type="password"] {
   background-position: 97%;
   background-position: center right 10px;
 }
+
+.c-calender {
+  background: #fff url("/images/calender-icon-2.png") no-repeat;
+  background-position: 97%;
+  background-position: center right 10px;
+}
+
 .c-call {
   background: #fff url("/images/call-icon.png") no-repeat;
   background-position: 97%;
@@ -135,6 +143,13 @@ input[type="submit"] {
   background-position: 97%;
   background-position: center right 10px;
 }
+
+.c-location {
+  background: #fff url("/images/location-icon-2.png") no-repeat;
+  background-position: 97%;
+  background-position: center right 10px;
+}
+
 input[type="reset"] {
   background-image: url("/images/cancel-icon.png");
   background-repeat: no-repeat;

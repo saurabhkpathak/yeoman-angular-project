@@ -25,27 +25,14 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
+
     <div class="container">
-      <p class="input-group">
-        <input
-        type="text"
-        class="form-control"
-        datetime-picker="dd MMM yyyy"
-        ng-model="dates.date1"
-        is-open="open.date1"
-        enable-time="false"
-        close-on-date-selection="true"
-        datepicker-append-to-body="true" />
-        <span class="input-group-btn">
-          <button type="button" class="btn btn-default" ng-click="openCalendar($event, 'date1')"><i class="glyphicon glyphicon-calendar"></i></button>
-        </span>
-      </p>
         <div ng-include="'views/components/header.html'"></div>
         <div ng-view=""></div>
     </div>
     <div ng-include="'views/components/footer.html'"></div>
         <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#addAttraction">
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#add-destination">
           Open SignUp
         </button>
         <div data-id="signupModal" ng-include="'/modalTemplate/modalLoginSignup.html'"></div>
@@ -53,6 +40,7 @@
         <div data-id="login" ng-include="'/modalTemplate/modalLogin.html'"></div>
         <div data-id="contact-agent" ng-include="'/modalTemplate/contactTravelAgent.html'"></div>
         <div data-id="addAttraction" ng-include="'/modalTemplate/addAttraction.html'"></div>
+        <div data-id="add-destination" ng-include="'/modalTemplate/addDestination.html'"></div>
 
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
