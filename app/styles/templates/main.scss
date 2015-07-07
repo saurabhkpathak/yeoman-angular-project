@@ -362,69 +362,17 @@ img {
   padding: 10px;
   position: relative;
   padding-bottom: 40px;
-  &::before, &::after {
-    content: '';
-    height: 16px;
-    width: 29px;
-    display: block;
-    background-repeat: no-repeat;
-    position: absolute;
-    left: 50%;
-    margin-left: -14px;
-    z-index: 1;
-  }
 }
-.plan-description:nth-child(even) {
-    &::before {
-      background-image: url(../images/upwardWhiteArrow.png);
-      top: -15px;
-    }
-    &::after {
-        display: none;
-    }
+
+.float-on-mobile .directing-arrow-left::before {
+    left: -30px;
+    top: 85px;
+    border-color: transparent #fff transparent;
 }
-.plan-description:nth-child(odd) {
-    &::after {
-      background-image: url(../images/downwardWhiteArrow.png);
-      bottom: -15px;
-    }
-    &::before {
-        display: none;
-    }
-}
-.float-on-mobile {
-    //  min-height: 250px;
-}
-.right-arrow , .left-arrow {
-    &::before, &::after {
-      content: '';
-      height: 30px;
-      width: 20px;
-      display: block;
-      background-repeat: no-repeat;
-      position: absolute;
-      top: 50%;
-      margin-top: -15px;
-      z-index: 1;
-    }
-}
-.right-arrow {
-    &::after {
-        background-image: url(../images/rightWhiteArrow.png);
-        right: -18px;
-    }
-    &::before {
-        display: none;
-    }
-}
-.left-arrow {
-    &::before {
-        background-image: url(../images/leftWhiteArrow.png);
-        left: -15px;
-    }
-    &::after {
-        display: none;
-    }
+.float-on-mobile .directing-arrow-right::after  {
+    right: -30px;
+    top: 105px;
+    border-color: transparent #fff;
 }
 .planned-city {
   font-family: 'Roboto', sans-serif;
