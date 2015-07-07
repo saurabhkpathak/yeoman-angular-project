@@ -32,8 +32,23 @@
     </div>
     <div ng-include="'views/components/footer.html'"></div>
         <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#signupModal">
+          Login Sign Up
+        </button>
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#signUp">
+          SignUp
+        </button>
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#login">
+          Login
+        </button>
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#contact-agent">
+          Contact Agent
+        </button>
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#addAttraction">
+          Add Attraction
+        </button>
         <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#add-destination">
-          Open SignUp
+          Add Destination
         </button>
         <div data-id="signupModal" ng-include="'/modalTemplate/modalLoginSignup.html'"></div>
         <div data-id="signUp" ng-include="'/modalTemplate/modalSignup.html'"></div>
