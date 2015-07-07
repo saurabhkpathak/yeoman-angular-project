@@ -68,6 +68,11 @@ angular
         controller: 'HomeCtrl',
         className: 'itinerary'
       })
+      .when('/AccordionTest', {
+        templateUrl: 'views/accordiontest.html',
+        controller: 'AccordiontestCtrl',
+        controllerAs: 'AccordionTest'
+      })
       .otherwise({
         redirectTo: '/'
       });
