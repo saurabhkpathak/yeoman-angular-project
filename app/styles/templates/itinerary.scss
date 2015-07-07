@@ -24,23 +24,17 @@
     padding-top: 20px;
     background-color: rgba(69, 88, 97, 0.8);
 }
-[role="presentation"] {
+.nav-tabs > li > a {
     background-color: #16702C !important;
-    a:hover {
-        background-color: #16702C !important;
-        border: 1px solid #16702C !important;
-        color: #fff !important;
-        border-radius: 0 !important;
-    }
+    border: 1px solid #16702C !important;
+    color: #fff !important;
+    border-radius: 0 !important;
 }
-[role="presentation"].active {
-    background-color: #51A848;
-    a {
-        background-color: #51A848 !important;
-        border: 1px solid #51A848 !important;
-        color: #fff !important;
-        border-radius: 0 !important;
-    }
+.nav-tabs > li.active > a {
+    background-color: #51A848 !important;
+    border: 1px solid #51A848 !important;
+    color: #fff !important;
+    border-radius: 0 !important;
 }
 .vacation-search {
     padding: 15px 0px;
@@ -52,7 +46,31 @@
         height: 35px;
         padding: 10px;
         border: 0;
+        background-image: url(../images/searchIconGreen.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        border-right: 15px solid transparent;
     }
+}
+.itinary-tabs-list {
+    background-image: url(../images/listIcon.png);
+    background-repeat: no-repeat;
+    padding-left: 25px;
+}
+.itinary-tabs-calendar {
+    background-image: url(../images/calenderIcon.png);
+    background-repeat: no-repeat;
+    padding-left: 25px;
+}
+.vacation-tabs-attractions {
+    background-image: url(../images/locationIconWhite.png);
+    background-repeat: no-repeat;
+    padding-left: 25px;
+}
+.vacation-tabs-tours {
+    background-image: url(../images/tourIcon.png);
+    background-repeat: no-repeat;
+    padding-left: 25px;
 }
 .panel-group .panel, .panel-body {
     border: 0 !important;
@@ -63,9 +81,17 @@
     background-color: #EBEFF0 !important;
 }
 .add-destination {
-    text-align: right;
     background-color: #EAEFF1;
     padding: 5px 15px;
+    line-height: 30px;
+    border-bottom: 4px solid #51A848;
+    span {
+        float: right;
+        background-image: url(../images/addBtnBlack.png);
+        background-repeat: no-repeat;
+        background-position: left;
+        padding-left: 25px;
+    }
 }
 .add-places-wrapper {
     background-color: #CCD7DC;
