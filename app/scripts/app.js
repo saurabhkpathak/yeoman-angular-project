@@ -65,8 +65,13 @@ angular
       })
       .when('/itinerary', {
         templateUrl: 'views/itinerary.html',
-        controller: 'HomeCtrl',
+        controller: 'ItineraryCtrl',
         className: 'itinerary'
+      })
+      .when('/AccordionTest', {
+        templateUrl: 'views/accordiontest.html',
+        controller: 'AccordiontestCtrl',
+        controllerAs: 'AccordionTest'
       })
       .otherwise({
         redirectTo: '/'
