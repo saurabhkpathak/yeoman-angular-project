@@ -65,7 +65,7 @@ angular
       })
       .when('/itinerary', {
         templateUrl: 'views/itinerary.html',
-        controller: 'HomeCtrl',
+        controller: 'ItineraryCtrl',
         className: 'itinerary'
       })
       .when('/AccordionTest', {
