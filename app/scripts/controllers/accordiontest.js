@@ -30,9 +30,5 @@ angular.module('yeomanProject')
       $scope.items.push('Item ' + newItemNo);
     };
 
-    $scope.status = {
-      isFirstOpen: true,
-      isFirstDisabled: false
-    };
 
   }]);
