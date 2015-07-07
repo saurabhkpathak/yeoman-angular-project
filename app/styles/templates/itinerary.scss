@@ -150,6 +150,18 @@
 .vacation-itinary-wrapper {
     padding-left: 0;
 }
+.save-button{
+    background-image: url(../images/saveBtn.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    float: right;
+    font-size: 18px;
+    padding-left: 35px;
+    margin-right: 15px;
+}
+.save-banner {
+    height: 75px;
+}
 .destination-images {
     background-color: #cfd8d7;
     padding: 15px;
