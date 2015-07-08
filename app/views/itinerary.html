@@ -92,58 +92,8 @@
                     <div class="destination-name">Paris, France</div>
                     <!-- Itinary List Accordion START -->
                     <div class="itinary-tabs-list-accordion">
-                      <accordion close-others="true">
-                        <accordion-group is-open="isopen" >
-                          <accordion-heading class="clearfix">
-                              <div class="tour-date-wrapper col-md-12 col-xs-12 clearfix">
-                                  <div class="col-md-10 col-xs-8 tour-date no-padding">Saturday, March7</div>
-                                  <div class="col-md-2 col-xs-2 tour-day no-padding"  ng-class="{'c-up': isopen, 'c-down': !isopen}">Day1</div>
-                              </div>
-                          </accordion-heading>
-                          <div class="list-wrapper">
-                              <!-- list START-->
-                              <div class="col-md-12 col-xs-12 ">
-                                  <img class="col-md-2 col-xs-4  site-image no-padding" src="images/Picture-2.png">
-                                  <div class="col-md-10 col-xs-8 site-description-wrapper directing-arrow-left no-padding">
-                                      <div class="site-name-wrapper clearfix">
-                                          <span class="col-md-3  col-xs-3 site-time">10:00 Am</span>
-                                          <span class="col-md-7  col-xs-7 site-name">Eiffel Tower</span>
-                                          <a class="col-md-2  col-xs-2 remove-site hidden-xs"></a>
-                                      </div>
-                                      <div class="site-description clearfix">
-                                          <span class="col-md-3  col-xs-3 site-duration">(3 hours)</span>
-                                          <span class="col-md-7  col-xs-7">
-                                              Lorem ipsum dolor sit amet, duo brute nusquam in.
-                                              Eos ei animal expetenda, cu detracto lobortis vel.
-                                              Lorem ipsum.
-                                          </span>
-                                      </div>
-                                  </div>
-                              </div>
-                              <!-- list END-->
-                              <!-- list START-->
-                              <div class="col-md-12 col-xs-12 site-image-wrapper">
-                                  <img class="col-md-2 col-xs-4  site-image no-padding" src="images/Picture-2.png">
-                                  <div class="col-md-10 col-xs-8 site-description-wrapper directing-arrow-left no-padding">
-                                      <div class="site-name-wrapper clearfix">
-                                          <span class="col-md-3  col-xs-3 site-time">10:00 Am</span>
-                                          <span class="col-md-7  col-xs-7 site-name">Eiffel Tower</span>
-                                          <a class="col-md-2  col-xs-2 remove-site hidden-xs"></a>
-                                      </div>
-                                      <div class="site-description clearfix">
-                                          <span class="col-md-3  col-xs-3 site-duration">(3 hours)</span>
-                                          <span class="col-md-7  col-xs-7">
-                                              Lorem ipsum dolor sit amet, duo brute nusquam in.
-                                              Eos ei animal expetenda, cu detracto lobortis vel.
-                                              Lorem ipsum.
-                                          </span>
-                                      </div>
-                                  </div>
-                              </div>
-                              <!-- list END-->
-                          </div>
-                        </accordion-group>
-                        <accordion-group>
+                      <accordion>
+                        <accordion-group is-open="isopen" ng-repeat="item in [1,2,3,4,5]">
                           <accordion-heading class="clearfix">
                               <div class="tour-date-wrapper col-md-12 col-xs-12 clearfix">
                                   <div class="col-md-10 col-xs-8 tour-date no-padding">Saturday, March7</div>
