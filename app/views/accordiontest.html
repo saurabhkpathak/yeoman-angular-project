@@ -1,28 +1,40 @@
 <div>
-  <accordion close-others="true">
-    <accordion-group is-open="true" >
-      <accordion-heading>
-        I can have markup, too! <i class="pull-right glyphicon"></i>
-      </accordion-heading>
-      This is just some content to illustrate fancy headings.
-    </accordion-group>
-    <accordion-group >
-      <accordion-heading>
-        I can have markup, too! <i class="pull-right glyphicon" ></i>
-      </accordion-heading>
-      This is just some content to illustrate fancy headings.
-    </accordion-group>
-    <accordion-group >
-      <accordion-heading>
-        I can have markup, too! <i class="pull-right glyphicon" ></i>
-      </accordion-heading>
-      This is just some content to illustrate fancy headings.
-    </accordion-group>
-    <accordion-group >
-      <accordion-heading>
-        I can have markup, too! <i class="pull-right glyphicon" ></i>
-      </accordion-heading>
-      This is just some content to illustrate fancy headings.
-    </accordion-group>
-  </accordion>
+  <tp-accordion ng-transclude>
+    <div class="accordion">
+      <tp-accordion-head>
+        dfgdfgfdg
+      </tp-accordion-head>
+      <tp-accordion-content ng-transclude>
+        accordion content 1
+      </tp-accordion-content>
+    </div><div class="accordion">
+      <tp-accordion-head ng-transclude>
+        <h1>accordion headin 1</h1>
+      </tp-accordion-head>
+      <tp-accordion-content ng-transclude>
+        accordion content 1
+      </tp-accordion-content>
+    </div><div class="accordion">
+      <tp-accordion-head ng-transclude>
+        <h1>accordion headin 1</h1>
+      </tp-accordion-head>
+      <tp-accordion-content ng-transclude>
+        accordion content 1
+      </tp-accordion-content>
+    </div><div class="accordion">
+      <tp-accordion-head ng-transclude>
+        <h1>accordion headin 1</h1>
+      </tp-accordion-head>
+      <tp-accordion-content ng-transclude>
+        accordion content 1
+      </tp-accordion-content>
+    </div><div class="accordion">
+      <tp-accordion-head ng-transclude>
+        <h1>accordion headin 1</h1>
+      </tp-accordion-head>
+      <tp-accordion-content ng-transclude>
+        accordion content 1
+      </tp-accordion-content>
+    </div>
+  </tp-accordion>
 </div>

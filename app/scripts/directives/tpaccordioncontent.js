@@ -9,10 +9,10 @@
 angular.module('yeomanProject')
   .directive('tpAccordionContent', function () {
     return {
-      template: '<div></div>',
+      transclude: true,
       restrict: 'E',
       link: function postLink(scope, element, attrs) {
-        element.text('this is the tpAccordionContent directive');
+
       }
     };
   });

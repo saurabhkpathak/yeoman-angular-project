@@ -93,11 +93,11 @@
                     <!-- Itinary List Accordion START -->
                     <div class="itinary-tabs-list-accordion">
                       <accordion close-others="true">
-                        <accordion-group is-open="true" >
+                        <accordion-group is-open="isopen" >
                           <accordion-heading class="clearfix">
                               <div class="tour-date-wrapper col-md-12 col-xs-12 clearfix">
                                   <div class="col-md-10 col-xs-8 tour-date no-padding">Saturday, March7</div>
-                                  <div class="col-md-2 col-xs-2 tour-day no-padding">Day1</div>
+                                  <div class="col-md-2 col-xs-2 tour-day no-padding"  ng-class="{'c-up': isopen, 'c-down': !isopen}">Day1</div>
                               </div>
                           </accordion-heading>
                           <div class="list-wrapper">
@@ -149,11 +149,11 @@
                     <!-- Itinary List Accordion START -->
                     <div class="itinary-tabs-list-accordion">
                       <accordion close-others="true">
-                        <accordion-group is-open="true" >
+                        <accordion-group is-open="isopen" >
                           <accordion-heading class="clearfix">
                               <div class="tour-date-wrapper col-md-12 col-xs-12 clearfix">
                                   <div class="col-md-10 col-xs-8 tour-date no-padding">Saturday, March7</div>
-                                  <div class="col-md-2 col-xs-2 tour-day no-padding">Day1</div>
+                                  <div class="col-md-2 col-xs-2 tour-day no-padding" ng-class="{'c-up': isopen, 'c-down': !isopen}">Day1</div>
                               </div>
                           </accordion-heading>
                           <div class="list-wrapper">
