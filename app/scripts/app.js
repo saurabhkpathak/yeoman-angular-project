@@ -73,6 +73,11 @@ angular
         controller: 'AccordiontestCtrl',
         controllerAs: 'AccordionTest'
       })
+      .when('/newAccordion', {
+        templateUrl: 'views/newaccordion.html',
+        controller: 'NewaccordionCtrl',
+        controllerAs: 'newAccordion'
+      })
       .otherwise({
         redirectTo: '/'
       });

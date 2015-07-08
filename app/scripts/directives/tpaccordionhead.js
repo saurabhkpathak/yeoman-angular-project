@@ -9,10 +9,14 @@
 angular.module('yeomanProject')
   .directive('tpAccordionHead', function () {
     return {
-      template: '<div></div>',
+      transclude: true,
+      templateUrl: '../../views/accordionhead.html',
+      controller: 'TpAccordCtrl',
       restrict: 'E',
-      link: function postLink(scope, element, attrs) {
-        element.text('this is the tpAccordionHead directive');
+      link: function postLink() {
       }
     };
-  });
+  }).controller('TpAccordCtrl', ['$scope', function ($scope) {
+
+
+  }]);
