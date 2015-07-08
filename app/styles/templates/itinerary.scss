@@ -11,6 +11,9 @@
           background-position: 16px;
     }
 }
+.panel-group .panel + .panel {
+      margin-top: 0 !important;
+}
 .accordion-toggle:after {
     content: '';
     display: table;
