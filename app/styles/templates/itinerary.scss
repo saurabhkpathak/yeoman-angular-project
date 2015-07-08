@@ -270,3 +270,10 @@
     background-repeat: no-repeat;
     margin-left: 10px;
 }
+@media (max-width: 991px) {
+    .vacation-destination-wrapper,
+    .vacation-itinary-wrapper,
+    .site-image-wrapper {
+      padding: 0;
+    }
+}
