@@ -15,9 +15,31 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'LocalStorageModule'
   ])
-  .config(function ($routeProvider) {
+  .config(function(localStorageServiceProvider) {
+    localStorageServiceProvider
+      .setPrefix('myApp')
+      .setStorageType('localStorage')
+      .setNotify(true, true)
+  })
+  .run(function($rootScope, localStorageService, $location) {
+    $rootScope.$on('$routeChangeStart', function(event, next, current) {
+      if (next.$$route.originalPath !== '/') {
+        if (!localStorageService.get("loggedIn")) {
+          $location.path('/');
+          event.preventDefault();
+        }
+      } else {
+        if (localStorageService.get("loggedIn")) {
+          $location.path('/main');
+          event.preventDefault();
+        }
+      }
+    })
+  })
+  .config(function($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/login.html',

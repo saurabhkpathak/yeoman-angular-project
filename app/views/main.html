@@ -1,8 +1,9 @@
 <div>
 <button ng-click="createNewCard()">Add Card</button>
 <div ng-repeat="card in cards">
-  Order Number<input type="text" ng-model="card.orderNum" />
+  Order Number<input type="text" ng-model="card.orderNum" ng-change="saveCard()" ng-model-options="{debounce: 500}"/>
   Quantity<input type="number" ng-model="card.quantity" />
   Locality<input type="text" ng-model="card.locality" />
 </div>
+<button ng-click="clearLocalStorage()">Clear Login</button>
 </div>
