@@ -8,5 +8,5 @@
  * Service in the yumitzApp.
  */
 angular.module('yumitzApp')
-  .constant('authUsername', 'yumitz@xyz.com')
-  .constant('authPassword', 'yumitz@123');
+    .constant('authUsername', 'yumitz@xyz.com')
+    .constant('authPassword', 'yumitz@123');
