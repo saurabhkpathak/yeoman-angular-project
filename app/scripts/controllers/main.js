@@ -14,9 +14,9 @@ angular.module('yumitzApp')
       this.quantity = 0;
       this.locality = null;
     }
-    $scope.cards = localStorageService.get("cards") ? localStorageService.get("cards") : [];
-    if ($scope.cards.length && !$scope.cards[$scope.cards.length - 1]["orderNum"]) {
-        $scope.cards.splice($scope.cards.length - 1, 1);
+    $scope.cards = localStorageService.get('cards') ? localStorageService.get('cards') : [];
+    if ($scope.cards.length && !$scope.cards[$scope.cards.length - 1].orderNum) {
+      $scope.cards.splice($scope.cards.length - 1, 1);
     }
     $scope.createNewCard = function() {
       if (isPreviousCardNull($scope.cards)) {
@@ -26,23 +26,23 @@ angular.module('yumitzApp')
       }
     };
     $scope.clearLocalStorage = function() {
-      localStorageService.remove("loggedIn");
+      localStorageService.remove('loggedIn');
     };
     $scope.saveCard = function() {
-        localStorageService.set("cards", $scope.cards);
+      localStorageService.set('cards', $scope.cards);
     };
 
     function isPreviousCardNull(list) {
       if (list.length === 0) {
         return true;
-      } else if (!list[list.length - 1]["orderNum"]) {
+      } else if (!list[list.length - 1].orderNum) {
         return false;
       }
       return true;
     }
-    $scope.$watchCollection('cards', function(n, o) {
+    $scope.$watchCollection('cards', function(n) {
       if (n.length) {
-          $scope.saveCard();
+        $scope.saveCard();
       }
-    })
+    });
   });

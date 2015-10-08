@@ -22,22 +22,22 @@ angular
     localStorageServiceProvider
       .setPrefix('myApp')
       .setStorageType('localStorage')
-      .setNotify(true, true)
+      .setNotify(true, true);
   })
   .run(function($rootScope, localStorageService, $location) {
-    $rootScope.$on('$routeChangeStart', function(event, next, current) {
+    $rootScope.$on('$routeChangeStart', function(event, next) {
       if (next.$$route.originalPath !== '/') {
-        if (!localStorageService.get("loggedIn")) {
+        if (!localStorageService.get('loggedIn')) {
           $location.path('/');
           event.preventDefault();
         }
       } else {
-        if (localStorageService.get("loggedIn")) {
+        if (localStorageService.get('loggedIn')) {
           $location.path('/main');
           event.preventDefault();
         }
       }
-    })
+    });
   })
   .config(function($routeProvider) {
     $routeProvider
