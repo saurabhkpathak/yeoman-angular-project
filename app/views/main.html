@@ -1,12 +1,12 @@
 <div class="clearfix">
-    <new-card cards="cards"></new-card>
+    <new-card cards="cards" edit-at-index="editAtIndex"></new-card>
     <div ng-repeat="card in cards" class="card-block">
         <section>
             <h1>{{$index + 1}}) Order Number: {{card.orderNum}}</h1>
             <span class="locality">Order Locality: {{card.locality}}</span>
             <div class="button-group clearfix">
                 <button class="del-btn" ng-click="removeCard($index)">Delete card</button>
-                <button class="edit-btn" ng-click="editCard()">Edit card</button>
+                <button class="edit-btn" ng-click="editCard($index)">Edit card</button>
             </div>
         </section>
     </div>

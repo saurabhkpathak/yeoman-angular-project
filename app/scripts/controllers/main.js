@@ -22,6 +22,9 @@ angular.module('yumitzApp')
         $scope.removeCard = function(index) {
             $scope.cards.splice(index, 1);
         };
+        $scope.editCard =function(index) {
+            $scope.editAtIndex = index;
+        };
         $scope.$watchCollection('cards', function(n) {
             if (n.length) {
                 $scope.saveCard();
