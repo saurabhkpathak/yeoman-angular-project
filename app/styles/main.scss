@@ -139,9 +139,18 @@ body {
         padding: 10px;
         border: 1px dashed #ccc;
     }
+    &:nth-of-type(3n+1) {
+        clear: both;
+    }
 }
 .locality {
     word-wrap: break-word;
+    height: 50px;
+    display: inline-block;
+    overflow: hidden;
+}
+.button-group {
+    margin-top: 10px;
 }
 .edit-btn {
     float: right;
