@@ -18,11 +18,15 @@ angular
         'ngTouch',
         'LocalStorageModule'
     ])
-    .config(function(localStorageServiceProvider) {
+    .config(function(localStorageServiceProvider, $provide) {
         localStorageServiceProvider
             .setPrefix('myApp')
             .setStorageType('localStorage')
             .setNotify(true, true);
+        $provide.decorator('$sniffer', function($delegate) {
+            $delegate.history = false;
+            return $delegate;
+        });
     })
     .run(function($rootScope, localStorageService, $location) {
         $rootScope.$on('$routeChangeStart', function(event, next) {
@@ -39,7 +43,7 @@ angular
             }
         });
     })
-    .config(function($routeProvider) {
+    .config(function($routeProvider, $locationProvider) {
         $routeProvider
             .when('/', {
                 templateUrl: 'views/login.html',
@@ -52,4 +56,6 @@ angular
             .otherwise({
                 redirectTo: '/'
             });
+        $locationProvider
+            .html5Mode(true);
     });
