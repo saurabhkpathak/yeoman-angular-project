@@ -87,3 +87,56 @@ body {
     border-bottom: 0;
   }
 }
+
+// custom styling
+.clearfix:after {
+    clear: both;
+    content: '';
+    display: table;
+}
+.card-content {
+    margin: 0;
+    outline: none;
+    padding: 10px 5px;
+    font-size: 15px;
+    font-weight: normal;
+    transition: 2s;
+    width: 95%;
+    &:focus {
+        width: 99%;
+        background-color: #47b6e2;
+    }
+}
+.new-card {
+    border: 1px solid grey;
+    padding: 5px;
+    max-width: 250px;
+    margin: 0 auto;
+    transition: 2s;
+    overflow: hidden;
+    section {
+        height: 0;
+        transition: 2s;
+        margin: 0;
+        textarea {
+            margin-top: 10px;
+            width: 99%;
+        }
+    }
+    &.full-mode {
+        max-width: 1300px;
+        section {
+            height: auto;
+        }
+    }
+}
+.card-block {
+    width: 33%;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+    section {
+        padding: 10px;
+        border: 1px dashed #ccc;
+    }
+}

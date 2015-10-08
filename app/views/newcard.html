@@ -1,0 +1,7 @@
+<article class="new-card" new-card ng-class="{'full-mode': fullMode}">
+    <input type="text" class="card-content" ng-click="fullMode = true" ng-change="fullMode = true" ng-model="card.orderNum" placeholder="Card Title" />
+    <section>
+        <textarea ng-model="card.locality"></textarea>
+        <button ng-click="addToCard()">Add New Card</button>
+    </section>
+</article>
