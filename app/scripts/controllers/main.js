@@ -19,6 +19,9 @@ angular.module('yumitzApp')
         $scope.saveCard = function() {
             localStorageService.set('cards', $scope.cards);
         };
+        $scope.removeCard = function(index) {
+            $scope.cards.splice(index, 1);
+        };
         $scope.$watchCollection('cards', function(n) {
             if (n.length) {
                 $scope.saveCard();

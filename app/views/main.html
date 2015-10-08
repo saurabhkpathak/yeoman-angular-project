@@ -3,7 +3,11 @@
     <div ng-repeat="card in cards" class="card-block">
         <section>
             <h1>Order Number: {{card.orderNum}}</h1>
-            <span>Order Locality: {{card.locality}}</span>
+            <span class="locality">Order Locality: {{card.locality}}</span>
+            <div class="button-group clearfix">
+                <button class="del-btn" ng-click="removeCard($index)">Delete card</button>
+                <button class="edit-btn" ng-click="editCard()">Edit card</button>
+            </div>
         </section>
     </div>
 </div>
