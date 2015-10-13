@@ -1,14 +1,18 @@
 <div class="clearfix">
     <new-card cards="cards" edit-at-index="editAtIndex"></new-card>
-    <div ng-repeat="card in cards" class="card-block">
-        <section>
-            <h1>{{$index + 1}}) Order Number: {{card.orderNum}}</h1>
-            <span class="locality">Order Locality: {{card.locality}}</span>
-            <div class="button-group clearfix">
-                <button class="del-btn" ng-click="removeCard($index)">Delete card</button>
-                <button class="edit-btn" ng-click="editCard($index)">Edit card</button>
-            </div>
-        </section>
+    <div class="clearfix" style="padding: 0 10px">
+        <md-grid-list class="gridListdemoBasicUsage" md-cols-sm="1" md-cols-gt-md="6" md-row-height-gt-md="1:1" md-row-height="1:1" md-gutter="12px" md-gutter-gt-sm="8px">
+            <md-grid-tile ng-repeat="card in cards" class="card-block" md-rowspan="1" md-colspan="2" md-colspan-sm="1">
+                <section class="purple">
+                    <h1>{{$index + 1}}) Order Number: {{card.orderNum}}</h1>
+                    <span class="locality">Order Locality: {{card.locality}}</span>
+                    <div class="button-group clearfix" md-grid-tile-footer>
+                        <md-button class="del-btn md-warn" ng-click="removeCard($index)">Delete card</md-button>
+                        <md-button class="edit-btn md-primary" ng-click="editCard($index)">Edit card</md-button>
+                    </div>
+                </section>
+            </md-grid-tile>
+        </md-grid-list>
     </div>
 </div>
 <button ng-click="clearLocalStorage()">Clear Login</button>

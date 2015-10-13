@@ -16,7 +16,8 @@ angular
         'ngRoute',
         'ngSanitize',
         'ngTouch',
-        'LocalStorageModule'
+        'LocalStorageModule',
+        'ngMaterial'
     ])
     .config(function(localStorageServiceProvider, $provide) {
         localStorageServiceProvider
